@@ -13,12 +13,25 @@ class NewsViewController: UIViewController {
     @IBOutlet weak var closeButtonImage: UIImageView!
     
     @IBOutlet weak var channelTitle: UILabel!
+    
+    @IBOutlet weak var channelImage: UIImageView!
+    
+    @IBOutlet weak var newsTitle: UILabel!
+    
+    @IBOutlet weak var newsSource: UILabel!
+    
+    @IBOutlet weak var newsTime: UILabel!
+    
     let currentChannel = Channels.sharedInstance.currentChannel;
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         channelTitle.text = currentChannel.channelName + " CHANNEL";
+        channelImage.image = UIImage(named: currentChannel.channelImage);
+        newsTitle.text = currentChannel.currentNews.title;
+        newsSource.text = currentChannel.currentNews.source;
+        newsTime.text = currentChannel.currentNews.time;
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(NewsViewController.imageTapped(gesture:)))
 

@@ -60,9 +60,8 @@ extension ViewController {
     return cell
   }
     
-    override func collectionView(_ collectionView: UICollectionView,
-                                 didDeselectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showSelectedChannel", sender: nil)
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showSelectedChannel", sender: nil);
     }
 }
 

@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="F1z-K0-61l" userLabel="MyMindIcon">
-                                <rect key="frame" x="127" y="238.99999999999997" width="160" height="194.50000000000009"/>
+                                <rect key="frame" x="47" y="141.5" width="320" height="389"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="68M-XV-71L">
                                 <rect key="frame" x="188.5" y="653.5" width="37" height="37"/>

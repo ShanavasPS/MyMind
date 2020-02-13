@@ -32,7 +32,7 @@ extension ChannelDetailsViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier,
         for: indexPath) as! ChannelDetailCell
-        cell.newsTitle.text = "Sample text";
+        cell.newsTitle.text = "Archeologist discovered  lost city in Honduran Jungle";
         return cell;
     }
     

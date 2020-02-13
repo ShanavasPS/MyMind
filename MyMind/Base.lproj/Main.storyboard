@@ -12,26 +12,61 @@
         <scene sceneID="iAn-7G-ixR">
             <objects>
                 <tableViewController id="1Mp-ME-uFA" customClass="ChannelDetailsViewController" customModule="MyMind" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mSU-gG-Gqt">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mSU-gG-Gqt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChannelDetailCell" id="Y8o-0H-uhX" customClass="ChannelDetailCell" customModule="MyMind" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y8o-0H-uhX" id="Huk-fV-1h6">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8T-l7-E33">
-                                            <rect key="frame" x="186" y="11" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Archeologist discovered  lost city in Honduran Jungle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8T-l7-E33">
+                                            <rect key="frame" x="10" y="10" width="394" height="48"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_list_source" translatesAutoresizingMaskIntoConstraints="NO" id="RPg-d5-bPU" userLabel="SourceImage">
+                                            <rect key="frame" x="15" y="73" width="11" height="16"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beC-Xu-LtA" userLabel="SourceName">
+                                            <rect key="frame" x="40" y="73" width="42" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_list_time" translatesAutoresizingMaskIntoConstraints="NO" id="oJN-xP-mXr" userLabel="TimeImage">
+                                            <rect key="frame" x="96" y="73" width="15" height="16"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HO-IU-pGZ" userLabel="TimeName">
+                                            <rect key="frame" x="125" y="73" width="42" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="STc-fQ-1JB"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="beC-Xu-LtA" firstAttribute="centerY" secondItem="oJN-xP-mXr" secondAttribute="centerY" id="07b-J0-cJU"/>
+                                        <constraint firstItem="oJN-xP-mXr" firstAttribute="leading" secondItem="beC-Xu-LtA" secondAttribute="trailing" constant="14" id="9YS-Xc-ned"/>
+                                        <constraint firstItem="u8T-l7-E33" firstAttribute="leading" secondItem="Huk-fV-1h6" secondAttribute="leading" constant="10" id="Dmj-6Q-uyE"/>
+                                        <constraint firstItem="0HO-IU-pGZ" firstAttribute="baseline" secondItem="beC-Xu-LtA" secondAttribute="baseline" id="KqQ-AA-Fkw"/>
+                                        <constraint firstItem="beC-Xu-LtA" firstAttribute="top" secondItem="oJN-xP-mXr" secondAttribute="top" id="LXR-Sf-aU8"/>
+                                        <constraint firstItem="RPg-d5-bPU" firstAttribute="leading" secondItem="Huk-fV-1h6" secondAttribute="leading" constant="15" id="PVV-6d-HsI"/>
+                                        <constraint firstItem="u8T-l7-E33" firstAttribute="trailing" secondItem="Huk-fV-1h6" secondAttribute="trailingMargin" constant="10" id="SZ4-LG-W2r"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="beC-Xu-LtA" secondAttribute="bottom" constant="20" id="cEm-3e-8it"/>
+                                        <constraint firstItem="beC-Xu-LtA" firstAttribute="leading" secondItem="RPg-d5-bPU" secondAttribute="trailing" constant="14" id="cF1-DE-7Oz"/>
+                                        <constraint firstItem="0HO-IU-pGZ" firstAttribute="leading" secondItem="oJN-xP-mXr" secondAttribute="trailing" constant="14" id="hqh-Hq-uOP"/>
+                                        <constraint firstItem="RPg-d5-bPU" firstAttribute="top" secondItem="u8T-l7-E33" secondAttribute="bottom" constant="15" id="ita-xp-rHG"/>
+                                        <constraint firstItem="oJN-xP-mXr" firstAttribute="top" secondItem="RPg-d5-bPU" secondAttribute="firstBaseline" id="mH5-qf-e9v"/>
+                                        <constraint firstItem="u8T-l7-E33" firstAttribute="top" secondItem="Huk-fV-1h6" secondAttribute="top" constant="10" id="xaC-LD-zFz"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="newsTitle" destination="u8T-l7-E33" id="hip-DQ-7hj"/>
@@ -50,7 +85,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1me-1U-Fot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2471" y="76"/>
+            <point key="canvasLocation" x="2469.5652173913045" y="75.669642857142847"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="8CW-Sm-aU5">
@@ -188,6 +223,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_list_source" width="11" height="16"/>
+        <image name="icon_list_time" width="15" height="15"/>
         <image name="icon_navbar_close" width="18.5" height="18.5"/>
     </resources>
 </document>

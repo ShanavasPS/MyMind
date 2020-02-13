@@ -28,9 +28,7 @@ class NewsViewController: UIViewController {
         @objc func imageTapped(gesture: UIGestureRecognizer) {
             // if the tapped view is a UIImageView then set it to imageview
             if (gesture.view as? UIImageView) != nil {
-                NSLog("Image Tapped")
-                
-
+                dismiss(animated: true, completion: nil)
             }
         }
 }

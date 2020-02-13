@@ -69,6 +69,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="newsSource" destination="beC-Xu-LtA" id="z8J-5T-ntg"/>
+                                    <outlet property="newsTime" destination="0HO-IU-pGZ" id="Msz-J7-qGV"/>
                                     <outlet property="newsTitle" destination="u8T-l7-E33" id="hip-DQ-7hj"/>
                                 </connections>
                             </tableViewCell>

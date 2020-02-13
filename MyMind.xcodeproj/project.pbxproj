@@ -19,6 +19,7 @@
 		8E0657C423F563C00009847A /* ChannelDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0657C323F563C00009847A /* ChannelDetailsController.swift */; };
 		8E0657C623F5BF0C0009847A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0657C523F5BF0C0009847A /* NewsViewController.swift */; };
 		8E0657C823F5C04F0009847A /* ChannelDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0657C723F5C04F0009847A /* ChannelDetailCell.swift */; };
+		8E0657CB23F5EAF50009847A /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0657CA23F5EAF50009847A /* News.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		8E0657C323F563C00009847A /* ChannelDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailsController.swift; sourceTree = "<group>"; };
 		8E0657C523F5BF0C0009847A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		8E0657C723F5C04F0009847A /* ChannelDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailCell.swift; sourceTree = "<group>"; };
+		8E0657CA23F5EAF50009847A /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		8E06579023F53B2B0009847A /* MyMind */ = {
 			isa = PBXGroup;
 			children = (
+				8E0657C923F5EA0F0009847A /* Model */,
 				8E06579123F53B2B0009847A /* AppDelegate.swift */,
 				8E06579323F53B2B0009847A /* SceneDelegate.swift */,
 				8E06579523F53B2B0009847A /* ViewController.swift */,
@@ -138,6 +141,14 @@
 				8E0657B523F53B2F0009847A /* Info.plist */,
 			);
 			path = MyMindUITests;
+			sourceTree = "<group>";
+		};
+		8E0657C923F5EA0F0009847A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E0657CA23F5EAF50009847A /* News.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E0657C423F563C00009847A /* ChannelDetailsController.swift in Sources */,
+				8E0657CB23F5EAF50009847A /* News.swift in Sources */,
 				8E0657C823F5C04F0009847A /* ChannelDetailCell.swift in Sources */,
 				8E0657C623F5BF0C0009847A /* NewsViewController.swift in Sources */,
 				8E06579623F53B2B0009847A /* ViewController.swift in Sources */,

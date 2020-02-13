@@ -11,12 +11,41 @@ import UIKit
 class ViewController: UICollectionViewController {
 
     private let reuseIdentifier = "ChannelCell"
-    private let channelImages = [#imageLiteral(resourceName: "Thumbnail_channel_Fashion"), #imageLiteral(resourceName: "Thumbnail_channel_Science"), #imageLiteral(resourceName: "Thumbnail_channel_Auto"), #imageLiteral(resourceName: "Thumbnail_channel_Technology"), #imageLiteral(resourceName: "Thumbnail_channel_Entertainment"), #imageLiteral(resourceName: "Thumbnail_channel_Environment"), #imageLiteral(resourceName: "Thumbnail_channel_Finance"), #imageLiteral(resourceName: "Thumbnail_channel_Travel")];
-    private let channelNames = ["FASHION", "SCIENCE", "AUTO", "TECHNOLOGY", "ENTERTAINMENT", "ENVIRONMENT", "FINANCES", "TRAVEL"];
-    
+    var channels = Channels.sharedInstance;
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavBarImage();
+        loadChannels();
+    }
+    
+    func loadChannels() {
+        channels.add(name: "FASHION", image: "Thumbnail_channel_Fashion");
+        channels.add(name: "SCIENCE", image: "Thumbnail_channel_Science");
+        channels.add(name: "AUTO", image: "Thumbnail_channel_Auto");
+        channels.add(name: "TECHNOLOGY", image: "Thumbnail_channel_Technology");
+        channels.add(name: "ENTERTAINMENT", image: "Thumbnail_channel_Entertainment");
+        channels.add(name: "ENVIRONMENT", image: "Thumbnail_channel_Environment");
+        channels.add(name: "FINANCES", image: "Thumbnail_channel_Finance");
+        channels.add(name: "TRAVEL", image: "Thumbnail_channel_Travel");
+        var index = 0;
+        channels.items.map({_ in
+            self.loadNews(index: index);
+            index += 1;
+            })
+    }
+    
+    func loadNews(index: Int) {
+        channels.items[index].add(title: "Artic sea ice extend hits record low for winter maximum", source: "CNN", time: "Apr 3, 2015");
+        channels.items[index].add(title: "Archeologists discovered lost city in Honduran jungle", source: "CNN", time: "Apr 3, 2015");
+        channels.items[index].add(title: "The balloons that could fly the tourists to the end of space", source: "CNN", time: "Apr 1, 2015");
+        channels.items[index].add(title: "In the Prawn Nebula, a Nursery for Newborn stars", source: "The New York Times", time: "March 30, 2015");
+        channels.items[index].add(title: "What will the battleship of the Future look like?", source: "Popular Science", time: "Apr 1, 2015");
+        channels.items[index].add(title: "Artic sea ice extend hits record low for winter maximum", source: "CNN", time: "Apr 3, 2015");
+        channels.items[index].add(title: "Archeologists discovered lost city in Honduran jungle", source: "CNN", time: "Apr 3, 2015");
+        channels.items[index].add(title: "The balloons that could fly the tourists to the end of space", source: "CNN", time: "Apr 1, 2015");
+        channels.items[index].add(title: "In the Prawn Nebula, a Nursery for Newborn stars", source: "The New York Times", time: "March 30, 2015");
+        channels.items[index].add(title: "What will the battleship of the Future look like?", source: "Popular Science", time: "Apr 1, 2015");
     }
 
     func addNavBarImage() {
@@ -52,8 +81,8 @@ extension ViewController {
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
                                                   for: indexPath) as! ChannelCell
-    cell.channelImageView.image = channelImages[indexPath.row];
-    cell.channelName.text = channelNames[indexPath.row];
+    cell.channelImageView.image = UIImage(named: channels.items[indexPath.row].channelImage);
+    cell.channelName.text = channels.items[indexPath.row].channelName;
     let frame = CGRect(x: 0, y: 0, width: self.view.frame.width/2, height: self.view.frame.width/2)
     cell.channelImageView.frame = frame;
     
@@ -61,6 +90,7 @@ extension ViewController {
   }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        channels.currentChannel = channels.items[indexPath.row];
         performSegue(withIdentifier: "showSelectedChannel", sender: nil);
     }
 }

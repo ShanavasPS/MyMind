@@ -12,5 +12,6 @@ class ChannelDetailCell: UITableViewCell {
     
 
     @IBOutlet weak var newsTitle: UILabel!
-    
+    @IBOutlet weak var newsSource: UILabel!
+    @IBOutlet weak var newsTime: UILabel!
 }

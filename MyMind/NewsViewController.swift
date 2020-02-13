@@ -13,10 +13,13 @@ class NewsViewController: UIViewController {
     @IBOutlet weak var closeButtonImage: UIImageView!
     
     @IBOutlet weak var channelTitle: UILabel!
+    let currentChannel = Channels.sharedInstance.currentChannel;
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        channelTitle.text = "SCIENCE CHANNEL";
+
+        channelTitle.text = currentChannel.channelName + " CHANNEL";
+        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(NewsViewController.imageTapped(gesture:)))
 
             // add it to the image view;

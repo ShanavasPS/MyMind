@@ -17,24 +17,15 @@ class HomeHeaderView: UICollectionReusableView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-    }
-    
-    @IBAction func followingButtonClicked(_ sender: Any) {
         followingButton.isSelected = true;
-        popularButton.isSelected = false;
-        exploreButton.isSelected = false;
     }
     
-    @IBAction func popularButtonClicked(_ sender: Any) {
-        followingButton.isSelected = false;
-        popularButton.isSelected = true;
-        exploreButton.isSelected = false;
+    @IBAction func headerButtonClicked(_ sender: Any) {
+        guard let button = sender as? UIButton else {
+            return
+        }
+        followingButton.isSelected = (button.tag == followingButton.tag);
+        popularButton.isSelected = (button.tag == popularButton.tag);
+        exploreButton.isSelected = (button.tag == exploreButton.tag);
     }
-    
-    @IBAction func exploreButtonClicked(_ sender: Any) {
-        followingButton.isSelected = false;
-        popularButton.isSelected = false;
-        exploreButton.isSelected = true;
-    }
-    
 }

@@ -10,13 +10,7 @@ import Foundation
 import UIKit
 
 class ChannelHeaderView: NibView {
-    let kCONTENT_XIB_NAME = "ChannelHeaderView"
-    @IBOutlet var contentView: UIView!
-    
     @IBOutlet weak var channelName: UILabel!
-    
     @IBOutlet weak var channelImage: UIImageView!
-    
     @IBOutlet weak var channelFollowers: UILabel!
-
 }

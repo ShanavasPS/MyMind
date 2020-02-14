@@ -17,6 +17,9 @@ class ViewController: UICollectionViewController {
         super.viewDidLoad()
         addNavBarImage();
         loadChannels();
+        
+        let myNib = UINib(nibName: "HomeHeaderView",bundle: nil)
+        self.collectionView.register(myNib, forSupplementaryViewOfKind:UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HomeHeaderView")
     }
     
     func loadChannels() {
@@ -92,6 +95,17 @@ extension ViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         channels.currentChannel = channels.items[indexPath.row];
         performSegue(withIdentifier: "showSelectedChannel", sender: nil);
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+
+        if kind == UICollectionView.elementKindSectionHeader {
+            let headerView = self.collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
+                withReuseIdentifier:"HomeHeaderView", for: indexPath) as! HomeHeaderView
+                return headerView
+            } else {
+                return UICollectionReusableView()
+            }
     }
 }
 

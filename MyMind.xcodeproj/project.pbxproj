@@ -24,6 +24,10 @@
 		8E0657D023F610480009847A /* ChannelHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0657CF23F610480009847A /* ChannelHeaderView.xib */; };
 		8E0657D223F61B360009847A /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0657D123F61B360009847A /* NibView.swift */; };
 		8E84A55723F61BC600F39ABC /* UIView+LoadNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A55623F61BC600F39ABC /* UIView+LoadNib.swift */; };
+		8E84A55923F6259100F39ABC /* HomePageHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E84A55823F6259100F39ABC /* HomePageHeader.xib */; };
+		8E84A55D23F625B100F39ABC /* HomePageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A55C23F625B100F39ABC /* HomePageHeader.swift */; };
+		8E84A56023F6284500F39ABC /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A55E23F6284500F39ABC /* HomeHeaderView.swift */; };
+		8E84A56123F6284500F39ABC /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		8E0657CF23F610480009847A /* ChannelHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelHeaderView.xib; sourceTree = "<group>"; };
 		8E0657D123F61B360009847A /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		8E84A55623F61BC600F39ABC /* UIView+LoadNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LoadNib.swift"; sourceTree = "<group>"; };
+		8E84A55823F6259100F39ABC /* HomePageHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageHeader.xib; sourceTree = "<group>"; };
+		8E84A55C23F625B100F39ABC /* HomePageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageHeader.swift; sourceTree = "<group>"; };
+		8E84A55E23F6284500F39ABC /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +175,10 @@
 				8E0657CD23F610070009847A /* ChannelHeaderView.swift */,
 				8E0657CF23F610480009847A /* ChannelHeaderView.xib */,
 				8E0657D123F61B360009847A /* NibView.swift */,
+				8E84A55823F6259100F39ABC /* HomePageHeader.xib */,
+				8E84A55C23F625B100F39ABC /* HomePageHeader.swift */,
+				8E84A55E23F6284500F39ABC /* HomeHeaderView.swift */,
+				8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E06579E23F53B2F0009847A /* LaunchScreen.storyboard in Resources */,
+				8E84A55923F6259100F39ABC /* HomePageHeader.xib in Resources */,
+				8E84A56123F6284500F39ABC /* HomeHeaderView.xib in Resources */,
 				8E06579B23F53B2F0009847A /* Assets.xcassets in Resources */,
 				8E06579923F53B2B0009847A /* Main.storyboard in Resources */,
 				8E0657D023F610480009847A /* ChannelHeaderView.xib in Resources */,
@@ -313,10 +327,12 @@
 			files = (
 				8E0657C423F563C00009847A /* ChannelDetailsController.swift in Sources */,
 				8E0657CB23F5EAF50009847A /* News.swift in Sources */,
+				8E84A56023F6284500F39ABC /* HomeHeaderView.swift in Sources */,
 				8E0657C823F5C04F0009847A /* ChannelDetailCell.swift in Sources */,
 				8E84A55723F61BC600F39ABC /* UIView+LoadNib.swift in Sources */,
 				8E0657C623F5BF0C0009847A /* NewsViewController.swift in Sources */,
 				8E0657D223F61B360009847A /* NibView.swift in Sources */,
+				8E84A55D23F625B100F39ABC /* HomePageHeader.swift in Sources */,
 				8E0657CE23F610070009847A /* ChannelHeaderView.swift in Sources */,
 				8E06579623F53B2B0009847A /* ViewController.swift in Sources */,
 				8E0657C223F5577F0009847A /* ChannelCell.swift in Sources */,

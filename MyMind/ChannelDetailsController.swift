@@ -50,6 +50,7 @@ extension ChannelDetailsViewController {
         view.channelImage.image = UIImage(named: currentChannel.channelImage);
         view.channelFollowers.text = currentChannel.followers;
         view.channelName.text = currentChannel.channelName + " CHANNEL";
+        view.channelButton.setTitle("Following", for: .normal)
         return view;
     }
     

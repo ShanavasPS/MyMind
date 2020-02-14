@@ -17,17 +17,6 @@ class HomeHeaderView: UICollectionReusableView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        followingButton.setTitleColor(UIColor.lightGray, for: .normal)
-        followingButton.setTitleColor(UIColor.white, for: .selected)
-        popularButton.setTitleColor(UIColor.lightGray, for: .normal)
-        popularButton.setTitleColor(UIColor.white, for: .selected)
-        exploreButton.setTitleColor(UIColor.lightGray, for: .normal)
-        exploreButton.setTitleColor(UIColor.white, for: .selected)
-        followingButton.setBackgroundImage(UIImage(named:"button_outline_stretchable_38px"), for: .selected)
-        popularButton.setBackgroundImage(UIImage(named:"button_outline_stretchable_38px"), for: .selected)
-        
-        exploreButton.setBackgroundImage(UIImage(named:"button_outline_stretchable_38px"), for: .selected)
-        
     }
     
     @IBAction func followingButtonClicked(_ sender: Any) {

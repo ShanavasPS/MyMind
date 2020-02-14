@@ -17,6 +17,12 @@
       },
       "idiom" : "universal",
       "filename" : "button_filled_stretchable_38px.png",
+      "alignment-insets" : {
+        "top" : 10,
+        "left" : 50,
+        "bottom" : 10,
+        "right" : 50
+      },
       "scale" : "1x"
     },
     {
@@ -36,6 +42,12 @@
       },
       "idiom" : "universal",
       "filename" : "button_filled_stretchable_38px@2x.png",
+      "alignment-insets" : {
+        "top" : 10,
+        "left" : 50,
+        "bottom" : 10,
+        "right" : 50
+      },
       "scale" : "2x"
     },
     {
@@ -55,6 +67,12 @@
       },
       "idiom" : "universal",
       "filename" : "button_filled_stretchable_38px@3x.png",
+      "alignment-insets" : {
+        "top" : 10,
+        "left" : 50,
+        "bottom" : 10,
+        "right" : 50
+      },
       "scale" : "3x"
     }
   ],

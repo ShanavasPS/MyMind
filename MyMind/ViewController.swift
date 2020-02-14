@@ -20,14 +20,14 @@ class ViewController: UICollectionViewController {
     }
     
     func loadChannels() {
-        channels.add(name: "FASHION", image: "Thumbnail_channel_Fashion");
-        channels.add(name: "SCIENCE", image: "Thumbnail_channel_Science");
-        channels.add(name: "AUTO", image: "Thumbnail_channel_Auto");
-        channels.add(name: "TECHNOLOGY", image: "Thumbnail_channel_Technology");
-        channels.add(name: "ENTERTAINMENT", image: "Thumbnail_channel_Entertainment");
-        channels.add(name: "ENVIRONMENT", image: "Thumbnail_channel_Environment");
-        channels.add(name: "FINANCES", image: "Thumbnail_channel_Finance");
-        channels.add(name: "TRAVEL", image: "Thumbnail_channel_Travel");
+        channels.add(name: "FASHION", image: "Thumbnail_channel_Fashion", followers: "234k Followers");
+        channels.add(name: "SCIENCE", image: "Thumbnail_channel_Science", followers: "123k Followers");
+        channels.add(name: "AUTO", image: "Thumbnail_channel_Auto", followers: "100k Followers");
+        channels.add(name: "TECHNOLOGY", image: "Thumbnail_channel_Technology", followers: "23.6k Followers");
+        channels.add(name: "ENTERTAINMENT", image: "Thumbnail_channel_Entertainment", followers: "63k Followers");
+        channels.add(name: "ENVIRONMENT", image: "Thumbnail_channel_Environment", followers: "111k Followers");
+        channels.add(name: "FINANCES", image: "Thumbnail_channel_Finance", followers: "234k Followers");
+        channels.add(name: "TRAVEL", image: "Thumbnail_channel_Travel", followers: "422k Followers");
         var index = 0;
         channels.items.map({_ in
             self.loadNews(index: index);
@@ -75,7 +75,7 @@ extension ViewController {
   
   override func collectionView(_ collectionView: UICollectionView,
                                numberOfItemsInSection section: Int) -> Int {
-    return 8
+    return channels.items.count;
   }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -44,4 +44,16 @@ extension ChannelDetailsViewController {
         currentChannel.currentNews = currentChannel.news[indexPath.row];
         performSegue(withIdentifier: "showSelectedNews", sender: nil);
     }
+
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = ChannelHeaderView();
+        view.channelImage.image = UIImage(named: currentChannel.channelImage);
+        view.channelFollowers.text = currentChannel.followers;
+        view.channelName.text = currentChannel.channelName + " CHANNEL";
+        return view;
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 200;
+    }
 }

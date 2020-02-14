@@ -23,12 +23,14 @@ struct News {
 class Channel {
     let channelName : String;
     let channelImage: String;
+    let followers: String;
     var news:[News] = []
     var currentNews: News;
-    init(name: String, image:String) {
+    init(name: String, image:String, followers: String) {
         self.news = []
         self.channelName = name;
         self.channelImage = image;
+        self.followers = followers;
         self.currentNews = News(title: "", source: "", time: "");
     }
     
@@ -44,10 +46,10 @@ class Channels {
     
     init() {
         self.items = [];
-        self.currentChannel = Channel(name: "", image: "");
+        self.currentChannel = Channel(name: "", image: "", followers: "");
     }
     
-    public func add(name: String, image: String) {
-        self.items.append(Channel(name: name, image: image))
+    public func add(name: String, image: String, followers: String) {
+        self.items.append(Channel(name: name, image: image, followers: followers))
     }
 }

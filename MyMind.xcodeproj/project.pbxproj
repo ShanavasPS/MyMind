@@ -26,6 +26,7 @@
 		8E84A56023F6284500F39ABC /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A55E23F6284500F39ABC /* HomeHeaderView.swift */; };
 		8E84A56123F6284500F39ABC /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */; };
 		8E84A56623F732F600F39ABC /* HeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56523F732F600F39ABC /* HeaderButton.swift */; };
+		8E84A56823F74EBF00F39ABC /* String+Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56723F74EBF00F39ABC /* String+Html.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		8E84A55E23F6284500F39ABC /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		8E84A56523F732F600F39ABC /* HeaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderButton.swift; sourceTree = "<group>"; };
+		8E84A56723F74EBF00F39ABC /* String+Html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Html.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				8E84A55623F61BC600F39ABC /* UIView+LoadNib.swift */,
+				8E84A56723F74EBF00F39ABC /* String+Html.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E84A56823F74EBF00F39ABC /* String+Html.swift in Sources */,
 				8E0657C423F563C00009847A /* ChannelDetailsController.swift in Sources */,
 				8E0657CB23F5EAF50009847A /* News.swift in Sources */,
 				8E84A56023F6284500F39ABC /* HomeHeaderView.swift in Sources */,

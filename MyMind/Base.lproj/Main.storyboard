@@ -199,6 +199,7 @@
                         <outlet property="channelTitle" destination="b8g-ca-fm8" id="Gmk-zz-wky"/>
                         <outlet property="closeButtonImage" destination="GxF-Sc-Jbf" id="QZM-Dj-kmJ"/>
                         <outlet property="newsSource" destination="fKH-TV-nLC" id="fhO-We-K9d"/>
+                        <outlet property="newsTextView" destination="NGN-46-QqQ" id="o45-Gc-cPK"/>
                         <outlet property="newsTime" destination="QFC-og-fBB" id="tkg-C6-MRU"/>
                         <outlet property="newsTitle" destination="93d-qu-piW" id="ma1-Bp-XfI"/>
                     </connections>

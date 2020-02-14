@@ -22,6 +22,8 @@ class NewsViewController: UIViewController {
     
     @IBOutlet weak var newsTime: UILabel!
     
+    @IBOutlet weak var newsTextView: UITextView!
+    
     let currentChannel = Channels.sharedInstance.currentChannel;
     
     override func viewDidLoad() {
@@ -32,6 +34,10 @@ class NewsViewController: UIViewController {
         newsTitle.text = currentChannel.currentNews.title;
         newsSource.text = currentChannel.currentNews.source;
         newsTime.text = currentChannel.currentNews.time;
+        
+        let news = "This is normal text <b>This text is bold</b>";
+        
+        newsTextView.attributedText = news.htmlToAttributedString;
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(NewsViewController.imageTapped(gesture:)))
 

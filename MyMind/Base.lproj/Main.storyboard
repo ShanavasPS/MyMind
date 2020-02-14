@@ -100,14 +100,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEC-pa-bfk" userLabel="HeaderView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_navbar_close" translatesAutoresizingMaskIntoConstraints="NO" id="GxF-Sc-Jbf">
-                                        <rect key="frame" x="20" y="40" width="28" height="46"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="28" id="3z9-e5-gb9"/>
-                                        </constraints>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ME0-ha-hkA" userLabel="Close Button">
+                                        <rect key="frame" x="20" y="47" width="18.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" image="icon_navbar_close">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeButtonClicked:" destination="IoM-3G-XbF" eventType="touchUpInside" id="Qaw-7B-fx2"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8g-ca-fm8">
-                                        <rect key="frame" x="186" y="50" width="42" height="26"/>
+                                        <rect key="frame" x="186" y="55.5" width="42" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -116,12 +120,10 @@
                                 <color key="backgroundColor" red="0.63137254899999995" green="0.45882352939999999" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="86" id="6i8-QV-u5K"/>
-                                    <constraint firstItem="GxF-Sc-Jbf" firstAttribute="leading" secondItem="aEC-pa-bfk" secondAttribute="leading" constant="20" id="AQO-Tz-8dq"/>
+                                    <constraint firstAttribute="bottom" secondItem="ME0-ha-hkA" secondAttribute="bottom" constant="5" id="FbG-Z2-krb"/>
                                     <constraint firstAttribute="bottom" secondItem="b8g-ca-fm8" secondAttribute="bottom" constant="10" id="Iff-2Q-eLJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="GxF-Sc-Jbf" secondAttribute="bottom" id="MxD-CP-f3l"/>
                                     <constraint firstItem="b8g-ca-fm8" firstAttribute="centerX" secondItem="aEC-pa-bfk" secondAttribute="centerX" id="Qb5-B7-yDK"/>
-                                    <constraint firstItem="b8g-ca-fm8" firstAttribute="centerY" secondItem="GxF-Sc-Jbf" secondAttribute="centerY" id="hQG-Dg-SmQ"/>
-                                    <constraint firstItem="GxF-Sc-Jbf" firstAttribute="top" secondItem="aEC-pa-bfk" secondAttribute="top" constant="40" id="udR-hK-WzE"/>
+                                    <constraint firstItem="ME0-ha-hkA" firstAttribute="leading" secondItem="aEC-pa-bfk" secondAttribute="leading" constant="20" id="yQS-bK-sSr"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AfY-rG-yig">
@@ -197,7 +199,6 @@
                     <connections>
                         <outlet property="channelImage" destination="AfY-rG-yig" id="0x7-sE-Xno"/>
                         <outlet property="channelTitle" destination="b8g-ca-fm8" id="Gmk-zz-wky"/>
-                        <outlet property="closeButtonImage" destination="GxF-Sc-Jbf" id="QZM-Dj-kmJ"/>
                         <outlet property="newsSource" destination="fKH-TV-nLC" id="fhO-We-K9d"/>
                         <outlet property="newsTextView" destination="NGN-46-QqQ" id="o45-Gc-cPK"/>
                         <outlet property="newsTime" destination="QFC-og-fBB" id="tkg-C6-MRU"/>

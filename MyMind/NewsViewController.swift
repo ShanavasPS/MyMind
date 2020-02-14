@@ -38,19 +38,9 @@ class NewsViewController: UIViewController {
         let news = "This is normal text <b>This text is bold</b>";
         
         newsTextView.attributedText = news.htmlToAttributedString;
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(NewsViewController.imageTapped(gesture:)))
+    }
 
-            // add it to the image view;
-            closeButtonImage.addGestureRecognizer(tapGesture)
-            // make sure imageView can be interacted with by user
-            closeButtonImage.isUserInteractionEnabled = true
-        }
-
-        @objc func imageTapped(gesture: UIGestureRecognizer) {
-            // if the tapped view is a UIImageView then set it to imageview
-            if (gesture.view as? UIImageView) != nil {
-                dismiss(animated: true, completion: nil)
-            }
-        }
+    @IBAction func closeButtonClicked(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

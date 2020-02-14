@@ -1,18 +1,78 @@
 {
   "images" : [
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "stretch",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 18,
+          "top" : 17,
+          "right" : 19,
+          "left" : 19
+        }
+      },
       "idiom" : "universal",
       "filename" : "button_outline_stretchable_38px.png",
+      "alignment-insets" : {
+        "top" : 10,
+        "left" : 50,
+        "bottom" : 10,
+        "right" : 50
+      },
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "stretch",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 36,
+          "top" : 35,
+          "right" : 39,
+          "left" : 38
+        }
+      },
       "idiom" : "universal",
       "filename" : "button_outline_stretchable_38px@2x.png",
+      "alignment-insets" : {
+        "top" : 10,
+        "left" : 50,
+        "bottom" : 10,
+        "right" : 50
+      },
       "scale" : "2x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "stretch",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 54,
+          "top" : 53,
+          "right" : 58,
+          "left" : 58
+        }
+      },
       "idiom" : "universal",
       "filename" : "button_outline_stretchable_38px@3x.png",
+      "alignment-insets" : {
+        "top" : 10,
+        "left" : 50,
+        "bottom" : 10,
+        "right" : 50
+      },
       "scale" : "3x"
     }
   ],

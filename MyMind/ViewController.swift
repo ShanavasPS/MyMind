@@ -18,6 +18,13 @@ class ViewController: UICollectionViewController {
         addNavBarImage();
         loadChannels();
         
+        navigationItem.backBarButtonItem = UIBarButtonItem(
+            title: "",
+            style: .plain,
+            target: nil,
+            action: nil
+        )
+        
         let myNib = UINib(nibName: "HomeHeaderView",bundle: nil)
         self.collectionView.register(myNib, forSupplementaryViewOfKind:UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HomeHeaderView")
     }

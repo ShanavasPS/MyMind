@@ -25,29 +25,29 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Archeologist discovered  lost city in Honduran Jungle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8T-l7-E33">
-                                            <rect key="frame" x="10" y="10" width="394" height="48"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                            <rect key="frame" x="10" y="9.9999999999999964" width="394" height="47.666666666666657"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_list_source" translatesAutoresizingMaskIntoConstraints="NO" id="RPg-d5-bPU" userLabel="SourceImage">
-                                            <rect key="frame" x="15" y="73" width="11" height="16"/>
+                                            <rect key="frame" x="15" y="72.666666666666671" width="11" height="16"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beC-Xu-LtA" userLabel="SourceName">
-                                            <rect key="frame" x="40" y="73" width="42" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="40" y="72.666666666666671" width="34.333333333333343" height="16.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_list_time" translatesAutoresizingMaskIntoConstraints="NO" id="oJN-xP-mXr" userLabel="TimeImage">
-                                            <rect key="frame" x="96" y="73" width="15" height="16"/>
+                                            <rect key="frame" x="88.333333333333329" y="72.666666666666671" width="15" height="16.333333333333329"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HO-IU-pGZ" userLabel="TimeName">
-                                            <rect key="frame" x="125" y="73" width="42" height="16"/>
+                                            <rect key="frame" x="117.33333333333333" y="73" width="34.333333333333329" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="STc-fQ-1JB"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -136,7 +136,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="a7m-q2-gXP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -144,26 +144,26 @@
                                 <rect key="frame" x="15" y="383" width="11" height="16"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKH-TV-nLC" userLabel="SourceName">
-                                <rect key="frame" x="41" y="383" width="42" height="20.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="41" y="383" width="34.333333333333343" height="16.333333333333314"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_list_time" translatesAutoresizingMaskIntoConstraints="NO" id="bc1-y9-y7q" userLabel="TimeImage">
-                                <rect key="frame" x="98" y="383" width="15" height="15"/>
+                                <rect key="frame" x="90.333333333333329" y="383" width="15" height="15"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFC-og-fBB" userLabel="TimeName">
-                                <rect key="frame" x="128" y="383" width="42" height="20.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="120.33333333333333" y="383" width="34.333333333333329" height="16.333333333333314"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NGN-46-QqQ">
-                                <rect key="frame" x="0.0" y="421.66666666666674" width="414" height="475.33333333333326"/>
+                                <rect key="frame" x="0.0" y="417.33333333333326" width="414" height="479.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -236,20 +236,20 @@
                                             <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th0-cs-hFI">
-                                            <rect key="frame" x="20.000000000000004" y="153.66666666666666" width="52.333333333333343" height="26.333333333333343"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <rect key="frame" x="15.000000000000002" y="171" width="29.666666666666671" height="14"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="th0-cs-hFI" secondAttribute="bottom" constant="20" id="2Pe-lq-gIv"/>
+                                        <constraint firstAttribute="bottom" secondItem="th0-cs-hFI" secondAttribute="bottom" constant="15" id="2Pe-lq-gIv"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="th0-cs-hFI" secondAttribute="trailing" constant="10" id="cHe-Aj-Gck"/>
                                         <constraint firstItem="cWl-xe-imr" firstAttribute="top" secondItem="Kcn-6d-B3J" secondAttribute="top" id="cv7-SU-ksO"/>
                                         <constraint firstAttribute="trailing" secondItem="cWl-xe-imr" secondAttribute="trailing" id="ddS-Q6-Y97"/>
                                         <constraint firstAttribute="bottom" secondItem="cWl-xe-imr" secondAttribute="bottom" id="e89-CP-qz1"/>
-                                        <constraint firstItem="th0-cs-hFI" firstAttribute="leading" secondItem="Kcn-6d-B3J" secondAttribute="leading" constant="20" id="nuc-7y-kbV"/>
+                                        <constraint firstItem="th0-cs-hFI" firstAttribute="leading" secondItem="Kcn-6d-B3J" secondAttribute="leading" constant="15" id="nuc-7y-kbV"/>
                                         <constraint firstItem="cWl-xe-imr" firstAttribute="leading" secondItem="Kcn-6d-B3J" secondAttribute="leading" id="pAg-51-m3B"/>
                                     </constraints>
                                 </collectionViewCellContentView>

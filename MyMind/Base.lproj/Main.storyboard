@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oie-rd-daL">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -98,10 +98,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEC-pa-bfk" userLabel="HeaderView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ME0-ha-hkA" userLabel="Close Button">
-                                        <rect key="frame" x="20" y="47" width="18.5" height="34"/>
+                                        <rect key="frame" x="20" y="49" width="18.666666666666671" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" image="icon_navbar_close">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
@@ -111,7 +111,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8g-ca-fm8">
-                                        <rect key="frame" x="186" y="55.5" width="42" height="20.5"/>
+                                        <rect key="frame" x="186" y="57.666666666666664" width="42" height="20.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -119,7 +119,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.63137254899999995" green="0.45882352939999999" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="86" id="6i8-QV-u5K"/>
                                     <constraint firstAttribute="bottom" secondItem="ME0-ha-hkA" secondAttribute="bottom" constant="5" id="FbG-Z2-krb"/>
                                     <constraint firstAttribute="bottom" secondItem="b8g-ca-fm8" secondAttribute="bottom" constant="10" id="Iff-2Q-eLJ"/>
                                     <constraint firstItem="b8g-ca-fm8" firstAttribute="centerX" secondItem="aEC-pa-bfk" secondAttribute="centerX" id="Qb5-B7-yDK"/>
@@ -127,13 +126,13 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AfY-rG-yig">
-                                <rect key="frame" x="0.0" y="86" width="414" height="280"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="280"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="Lkb-7O-k8w"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93d-qu-piW" userLabel="News Title">
-                                <rect key="frame" x="20" y="298" width="374" height="48"/>
+                                <rect key="frame" x="20" y="300" width="374" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="a7m-q2-gXP"/>
                                 </constraints>
@@ -142,25 +141,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_list_source" translatesAutoresizingMaskIntoConstraints="NO" id="oYi-88-1a3" userLabel="SourceImage">
-                                <rect key="frame" x="15" y="381" width="11" height="16"/>
+                                <rect key="frame" x="15" y="383" width="11" height="16"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKH-TV-nLC" userLabel="SourceName">
-                                <rect key="frame" x="41" y="381" width="42" height="20.5"/>
+                                <rect key="frame" x="41" y="383" width="42" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_list_time" translatesAutoresizingMaskIntoConstraints="NO" id="bc1-y9-y7q" userLabel="TimeImage">
-                                <rect key="frame" x="98" y="381" width="15" height="15"/>
+                                <rect key="frame" x="98" y="383" width="15" height="15"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFC-og-fBB" userLabel="TimeName">
-                                <rect key="frame" x="128" y="381" width="42" height="20.5"/>
+                                <rect key="frame" x="128" y="383" width="42" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NGN-46-QqQ">
-                                <rect key="frame" x="0.0" y="419.5" width="414" height="477.5"/>
+                                <rect key="frame" x="0.0" y="421.66666666666674" width="414" height="475.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -187,6 +186,7 @@
                             <constraint firstItem="NGN-46-QqQ" firstAttribute="leading" secondItem="BZk-vb-2tg" secondAttribute="leading" id="f9b-jT-quj"/>
                             <constraint firstItem="oYi-88-1a3" firstAttribute="leading" secondItem="NpP-Xf-FB9" secondAttribute="leading" constant="15" id="ful-bp-JFx"/>
                             <constraint firstItem="AfY-rG-yig" firstAttribute="trailing" secondItem="aEC-pa-bfk" secondAttribute="trailing" id="gnU-7d-pZD"/>
+                            <constraint firstItem="aEC-pa-bfk" firstAttribute="bottom" secondItem="NpP-Xf-FB9" secondAttribute="top" constant="44" id="kgV-q6-YM4"/>
                             <constraint firstItem="NpP-Xf-FB9" firstAttribute="trailing" secondItem="NGN-46-QqQ" secondAttribute="trailing" id="sDg-aH-d8a"/>
                             <constraint firstItem="NpP-Xf-FB9" firstAttribute="trailing" secondItem="93d-qu-piW" secondAttribute="trailing" constant="20" id="tXi-bb-QdG"/>
                             <constraint firstItem="QFC-og-fBB" firstAttribute="leading" secondItem="bc1-y9-y7q" secondAttribute="trailing" constant="15" id="x6o-6h-vs5"/>
@@ -238,7 +238,7 @@
                                             <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th0-cs-hFI">
-                                            <rect key="frame" x="20" y="153.5" width="52.5" height="26.5"/>
+                                            <rect key="frame" x="19.999999999999996" y="153.66666666666666" width="52.666666666666657" height="26.333333333333343"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -297,7 +297,7 @@
     <resources>
         <image name="icon_list_source" width="11" height="16"/>
         <image name="icon_list_time" width="15" height="15"/>
-        <image name="icon_navbar_close" width="18.5" height="18.5"/>
+        <image name="icon_navbar_close" width="18.666666030883789" height="18.666666030883789"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

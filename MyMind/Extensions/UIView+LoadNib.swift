@@ -2,7 +2,7 @@
 //  UIView+LoadNib.swift
 //  MyMind
 //
-//  Created by Shamnad PS on 14/02/20.
+//  Created by Shanavas Shaji on 14/02/20.
 //  Copyright © 2020 shanavas. All rights reserved.
 //
 

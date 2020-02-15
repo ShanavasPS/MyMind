@@ -2,7 +2,7 @@
 //  WebServiceManager.swift
 //  MyMind
 //
-//  Created by Shamnad PS on 15/02/20.
+//  Created by Shanavas Shaji on 15/02/20.
 //  Copyright © 2020 shanavas. All rights reserved.
 //
 
@@ -43,15 +43,15 @@ class WebServiceManager {
     }
     
     func loadNews(index: Int) {
-        channels.items[index].add(title: "Artic sea ice extend hits record low for winter maximum", source: "CNN", time: "Apr 3, 2015");
-        channels.items[index].add(title: "Archeologists discovered lost city in Honduran jungle", source: "CNN", time: "Apr 3, 2015");
-        channels.items[index].add(title: "The balloons that could fly the tourists to the end of space", source: "CNN", time: "Apr 1, 2015");
-        channels.items[index].add(title: "In the Prawn Nebula, a Nursery for Newborn stars", source: "The New York Times", time: "March 30, 2015");
-        channels.items[index].add(title: "What will the battleship of the Future look like?", source: "Popular Science", time: "Apr 1, 2015");
-        channels.items[index].add(title: "Artic sea ice extend hits record low for winter maximum", source: "CNN", time: "Apr 3, 2015");
-        channels.items[index].add(title: "Archeologists discovered lost city in Honduran jungle", source: "CNN", time: "Apr 3, 2015");
-        channels.items[index].add(title: "The balloons that could fly the tourists to the end of space", source: "CNN", time: "Apr 1, 2015");
-        channels.items[index].add(title: "In the Prawn Nebula, a Nursery for Newborn stars", source: "The New York Times", time: "March 30, 2015");
-        channels.items[index].add(title: "What will the battleship of the Future look like?", source: "Popular Science", time: "Apr 1, 2015");
+        channels.items[index].add(title: "Artic sea ice extend hits record low for winter maximum", source: "CNN", time: "Apr 3, 2015", news: "This is normal text <b>This text is bold</b>");
+        channels.items[index].add(title: "Archeologists discovered lost city in Honduran jungle", source: "CNN", time: "Apr 3, 2015", news: "This is normal text <b>This text is bold</b>");
+        channels.items[index].add(title: "The balloons that could fly the tourists to the end of space", source: "CNN", time: "Apr 1, 2015", news: "This is normal text <b>This text is bold</b>");
+        channels.items[index].add(title: "In the Prawn Nebula, a Nursery for Newborn stars", source: "The New York Times", time: "March 30, 2015", news: "This is normal text <b>This text is bold</b>");
+        channels.items[index].add(title: "What will the battleship of the Future look like?", source: "Popular Science", time: "Apr 1, 2015", news: "This is normal text <b>This text is bold</b>");
+        channels.items[index].add(title: "Artic sea ice extend hits record low for winter maximum", source: "CNN", time: "Apr 3, 2015", news: "This is normal text <b>This text is bold</b>");
+        channels.items[index].add(title: "Archeologists discovered lost city in Honduran jungle", source: "CNN", time: "Apr 3, 2015", news: "This is normal text <b>This text is bold</b>");
+        channels.items[index].add(title: "The balloons that could fly the tourists to the end of space", source: "CNN", time: "Apr 1, 2015", news: "This is normal text <b>This text is bold</b>");
+        channels.items[index].add(title: "In the Prawn Nebula, a Nursery for Newborn stars", source: "The New York Times", time: "March 30, 2015", news: "This is normal text <b>This text is bold</b>");
+        channels.items[index].add(title: "What will the battleship of the Future look like?", source: "Popular Science", time: "Apr 1, 2015", news: "This is normal text <b>This text is bold</b>");
     }
 }

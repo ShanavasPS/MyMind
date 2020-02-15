@@ -2,7 +2,7 @@
 //  News.swift
 //  MyMind
 //
-//  Created by Shamnad PS on 13/02/20.
+//  Created by Shanavas Shaji on 13/02/20.
 //  Copyright © 2020 shanavas. All rights reserved.
 //
 
@@ -18,11 +18,13 @@ struct News {
    var title: String
    var source: String
    var time: String
+   var news: String
     
-    init(title: String, source: String, time: String) {
+    init(title: String, source: String, time: String, news: String) {
         self.title = title
         self.source = source
         self.time = time
+        self.news = news
     }
 }
 
@@ -39,13 +41,13 @@ class Channel {
         self.channelName = name;
         self.channelImage = image;
         self.followers = followers;
-        self.currentNews = News(title: "", source: "", time: "");
+        self.currentNews = News(title: "", source: "", time: "", news: "");
         self.channelType = channelType;
         self.isFollowing = isFollowing;
     }
     
-    public func add(title: String, source: String, time: String) {
-        self.news.append(News(title: title, source: source, time: time))
+    public func add(title: String, source: String, time: String, news: String) {
+        self.news.append(News(title: title, source: source, time: time, news: news))
     }
 }
 

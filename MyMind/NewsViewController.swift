@@ -2,7 +2,7 @@
 //  NewsViewController.swift
 //  MyMind
 //
-//  Created by Shamnad PS on 13/02/20.
+//  Created by Shanavas Shaji on 13/02/20.
 //  Copyright © 2020 shanavas. All rights reserved.
 //
 
@@ -34,10 +34,7 @@ class NewsViewController: UIViewController {
         newsTitle.text = currentChannel.currentNews.title;
         newsSource.text = currentChannel.currentNews.source;
         newsTime.text = currentChannel.currentNews.time;
-        
-        let news = "This is normal text <b>This text is bold</b>";
-        
-        newsTextView.attributedText = news.htmlToAttributedString;
+        newsTextView.attributedText = currentChannel.currentNews.news.htmlToAttributedString;
     }
 
     @IBAction func closeButtonClicked(_ sender: Any) {

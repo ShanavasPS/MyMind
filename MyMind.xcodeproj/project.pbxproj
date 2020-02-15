@@ -123,19 +123,16 @@
 		8E06579023F53B2B0009847A /* MyMind */ = {
 			isa = PBXGroup;
 			children = (
+				8E84A56C23F8882B00F39ABC /* Cells */,
 				8E84A56B23F882E200F39ABC /* Controllers */,
-				8E84A56323F732D200F39ABC /* Components */,
 				8E84A55523F61BAA00F39ABC /* Extensions */,
 				8E0657CC23F60FE30009847A /* Views */,
 				8E0657C923F5EA0F0009847A /* Model */,
 				8E06579123F53B2B0009847A /* AppDelegate.swift */,
 				8E06579323F53B2B0009847A /* SceneDelegate.swift */,
-				8E06579723F53B2B0009847A /* Main.storyboard */,
 				8E06579A23F53B2F0009847A /* Assets.xcassets */,
 				8E06579C23F53B2F0009847A /* LaunchScreen.storyboard */,
 				8E06579F23F53B2F0009847A /* Info.plist */,
-				8E0657C123F5577F0009847A /* ChannelCell.swift */,
-				8E0657C723F5C04F0009847A /* ChannelDetailCell.swift */,
 			);
 			path = MyMind;
 			sourceTree = "<group>";
@@ -170,10 +167,9 @@
 		8E0657CC23F60FE30009847A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8E0657CD23F610070009847A /* ChannelHeaderView.swift */,
 				8E0657CF23F610480009847A /* ChannelHeaderView.xib */,
-				8E84A55E23F6284500F39ABC /* HomeHeaderView.swift */,
 				8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */,
+				8E06579723F53B2B0009847A /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,13 +183,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		8E84A56323F732D200F39ABC /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
 		8E84A56B23F882E200F39ABC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +191,17 @@
 				8E0657C523F5BF0C0009847A /* NewsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8E84A56C23F8882B00F39ABC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8E0657C723F5C04F0009847A /* ChannelDetailCell.swift */,
+				8E0657C123F5577F0009847A /* ChannelCell.swift */,
+				8E0657CD23F610070009847A /* ChannelHeaderView.swift */,
+				8E84A55E23F6284500F39ABC /* HomeHeaderView.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

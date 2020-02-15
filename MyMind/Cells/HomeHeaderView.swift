@@ -14,9 +14,7 @@ protocol HomeHeaderViewDelegate {
 
 class HomeHeaderView: UICollectionReusableView {
     @IBOutlet weak var followingButton: UIButton!
-    
     @IBOutlet weak var popularButton: UIButton!
-    
     @IBOutlet weak var exploreButton: UIButton!
     
     var delegate: HomeHeaderViewDelegate?

@@ -11,13 +11,16 @@ import Foundation
 
 class ChannelDetailsViewController: UITableViewController {
     
-    private let reuseIdentifier = "ChannelDetailCell"
-    let headerView = ChannelHeaderView();
-    let currentChannel = Channels.sharedInstance.currentChannel;
+    private let reuseIdentifier = "ChannelDetailCell";
+    private let selectedNewsSegue = "showSelectedNews";
+    private let channelPostfix = " CHANNEL";
+    private let headerView = ChannelHeaderView();
+    private let currentChannel = Channels.sharedInstance.currentChannel;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateTableHeader()
         addNavBarImage();
+        setupTableHeader()
     }
     
     func addNavBarImage() {
@@ -31,17 +34,24 @@ class ChannelDetailsViewController: UITableViewController {
         titleView.backgroundColor = .clear
         self.navigationItem.titleView = titleView
     }
+    
+    //Setup the table view header using the current channel details
+    func setupTableHeader(){
+        headerView.channelImage.image = UIImage(named: currentChannel.channelImage);
+        headerView.channelFollowers.text = currentChannel.followers;
+        headerView.channelName.text = currentChannel.channelName + channelPostfix;
+        headerView.channelButton.isSelected = currentChannel.isFollowing;
+    }
 }
 
 // MARK: - UITableViewDataSource
 extension ChannelDetailsViewController {
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10;
+        return currentChannel.news.count;
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,27 +65,14 @@ extension ChannelDetailsViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         currentChannel.currentNews = currentChannel.news[indexPath.row];
-        performSegue(withIdentifier: "showSelectedNews", sender: nil);
+        performSegue(withIdentifier: selectedNewsSegue, sender: nil);
     }
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return headerView;
     }
     
-    func updateTableHeader(){
-        headerView.delegate = self;
-        headerView.channelImage.image = UIImage(named: currentChannel.channelImage);
-        headerView.channelFollowers.text = currentChannel.followers;
-        headerView.channelName.text = currentChannel.channelName + " CHANNEL";
-        updateHeaderButton();
-    }
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 200;
-    }
-}
-
-extension ChannelDetailsViewController: ChannelHeaderViewDelegate {
-    func updateHeaderButton() {
-            headerView.channelButton.isSelected = currentChannel.isFollowing;
     }
 }

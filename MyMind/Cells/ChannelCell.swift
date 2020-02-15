@@ -9,6 +9,5 @@ import UIKit
 
 class ChannelCell: UICollectionViewCell {
   @IBOutlet weak var channelImageView: UIImageView!
-    
-    @IBOutlet weak var channelName: UILabel!
+  @IBOutlet weak var channelName: UILabel!
 }

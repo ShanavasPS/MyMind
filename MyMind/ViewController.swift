@@ -27,6 +27,7 @@ class ViewController: UICollectionViewController {
             target: nil,
             action: nil
         )
+        navigationController?.navigationBar.barStyle = .black
         navigationItem.backBarButtonItem!.title = "";
         let myNib = UINib(nibName: "HomeHeaderView",bundle: nil)
         self.collectionView.register(myNib, forSupplementaryViewOfKind:UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HomeHeaderView")
@@ -36,7 +37,7 @@ class ViewController: UICollectionViewController {
         super.viewWillAppear(animated);
         updateTableBasedonHeader(channels.selectedChannelType);
     }
-
+    
     func addNavBarImage() {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Icon_navbar_Logo"))
         imageView.frame = CGRect(x: 0, y: 0, width: 40, height: 40)

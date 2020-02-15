@@ -134,6 +134,7 @@ extension ViewController: HomeHeaderViewDelegate {
         case .none:
             channelList = channels.items.filter {$0.isFollowing == true};
         }
+        channels.selectedChannelType = type;
         self.collectionView.reloadData();
     }
 }

@@ -159,7 +159,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NGN-46-QqQ">
-                                <rect key="frame" x="10" y="417.33333333333326" width="394" height="479.66666666666674"/>
+                                <rect key="frame" x="10" y="417.33333333333326" width="394" height="444.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -175,14 +175,16 @@
                             <constraint firstItem="AfY-rG-yig" firstAttribute="top" secondItem="aEC-pa-bfk" secondAttribute="bottom" id="8gm-fS-eya"/>
                             <constraint firstItem="aEC-pa-bfk" firstAttribute="leading" secondItem="NpP-Xf-FB9" secondAttribute="leading" id="CAy-Il-Gy8"/>
                             <constraint firstItem="AfY-rG-yig" firstAttribute="bottom" secondItem="93d-qu-piW" secondAttribute="bottom" constant="20" id="Crz-A7-65w"/>
-                            <constraint firstItem="NpP-Xf-FB9" firstAttribute="bottom" secondItem="NGN-46-QqQ" secondAttribute="bottom" constant="-35" id="HhP-gK-8Wt"/>
+                            <constraint firstItem="QFC-og-fBB" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="BZk-vb-2tg" secondAttribute="trailing" constant="15" id="FEk-3H-UDN"/>
                             <constraint firstItem="oYi-88-1a3" firstAttribute="top" secondItem="AfY-rG-yig" secondAttribute="bottom" constant="15" id="JWX-2F-YaV"/>
                             <constraint firstItem="QFC-og-fBB" firstAttribute="top" secondItem="AfY-rG-yig" secondAttribute="bottom" constant="15" id="Kqc-47-VBJ"/>
                             <constraint firstItem="AfY-rG-yig" firstAttribute="leading" secondItem="BZk-vb-2tg" secondAttribute="leading" id="N7D-Tx-kYJ"/>
+                            <constraint firstItem="AfY-rG-yig" firstAttribute="height" secondItem="NpP-Xf-FB9" secondAttribute="height" multiplier="0.342298" id="Pas-3O-9Fn"/>
                             <constraint firstItem="AfY-rG-yig" firstAttribute="centerX" secondItem="BZk-vb-2tg" secondAttribute="centerX" id="S2B-S9-BOX"/>
                             <constraint firstItem="93d-qu-piW" firstAttribute="leading" secondItem="NpP-Xf-FB9" secondAttribute="leading" constant="20" id="SZW-Fj-HcS"/>
                             <constraint firstItem="bc1-y9-y7q" firstAttribute="leading" secondItem="fKH-TV-nLC" secondAttribute="trailing" constant="15" id="TkU-7q-a2y"/>
                             <constraint firstItem="bc1-y9-y7q" firstAttribute="top" secondItem="AfY-rG-yig" secondAttribute="bottom" constant="15" id="Uo7-tq-VOR"/>
+                            <constraint firstItem="NGN-46-QqQ" firstAttribute="bottom" secondItem="NpP-Xf-FB9" secondAttribute="bottom" id="WfA-9N-1t1"/>
                             <constraint firstItem="NGN-46-QqQ" firstAttribute="leading" secondItem="BZk-vb-2tg" secondAttribute="leading" constant="10" id="f9b-jT-quj"/>
                             <constraint firstItem="oYi-88-1a3" firstAttribute="leading" secondItem="NpP-Xf-FB9" secondAttribute="leading" constant="15" id="ful-bp-JFx"/>
                             <constraint firstItem="AfY-rG-yig" firstAttribute="trailing" secondItem="aEC-pa-bfk" secondAttribute="trailing" id="gnU-7d-pZD"/>

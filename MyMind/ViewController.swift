@@ -30,6 +30,11 @@ class ViewController: UICollectionViewController {
         self.collectionView.register(myNib, forSupplementaryViewOfKind:UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HomeHeaderView")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        updateTableBasedonHeader(channels.selectedChannelType);
+    }
+    
     func loadChannels() {
         channels.add(name: "FASHION", image: "Thumbnail_channel_Fashion", followers: "234k Followers", channelType: .explore, isFollowing: true);
         channels.add(name: "SCIENCE", image: "Thumbnail_channel_Science", followers: "123k Followers", channelType: .popular, isFollowing: true);
@@ -127,7 +132,7 @@ extension ViewController: HomeHeaderViewDelegate {
         case .explore:
             channelList = channels.items.filter {$0.channelType == .explore};
         case .none:
-            channelList = channels.items;
+            channelList = channels.items.filter {$0.isFollowing == true};
         }
         self.collectionView.reloadData();
     }

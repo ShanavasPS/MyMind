@@ -33,7 +33,7 @@ class Channel {
     var news: [News];
     var currentNews: News;
     var channelType: ChannelType;
-    let isFollowing: Bool;
+    var isFollowing: Bool;
     init(name: String, image:String, followers: String, channelType: ChannelType, isFollowing: Bool) {
         self.news = []
         self.channelName = name;
@@ -53,9 +53,10 @@ class Channels {
     var items:[Channel] = [];
     public static let sharedInstance = Channels()
     var currentChannel: Channel;
-    
+    var selectedChannelType: ChannelType;
     init() {
         self.items = [];
+        self.selectedChannelType = .none;
         self.currentChannel = Channel(name: "", image: "", followers: "", channelType: .none, isFollowing: false);
     }
     

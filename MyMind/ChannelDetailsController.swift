@@ -12,11 +12,11 @@ import Foundation
 class ChannelDetailsViewController: UITableViewController {
     
     private let reuseIdentifier = "ChannelDetailCell"
-    
-//    var channel = Channel.sharedInstance;
+    let headerView = ChannelHeaderView();
     let currentChannel = Channels.sharedInstance.currentChannel;
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateTableHeader()
     }
 }
 
@@ -46,15 +46,23 @@ extension ChannelDetailsViewController {
     }
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = ChannelHeaderView();
-        view.channelImage.image = UIImage(named: currentChannel.channelImage);
-        view.channelFollowers.text = currentChannel.followers;
-        view.channelName.text = currentChannel.channelName + " CHANNEL";
-        view.channelButton.setTitle("Following", for: .normal)
-        return view;
+        return headerView;
     }
     
+    func updateTableHeader(){
+        headerView.delegate = self;
+        headerView.channelImage.image = UIImage(named: currentChannel.channelImage);
+        headerView.channelFollowers.text = currentChannel.followers;
+        headerView.channelName.text = currentChannel.channelName + " CHANNEL";
+        updateHeaderButton();
+    }
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 200;
+    }
+}
+
+extension ChannelDetailsViewController: ChannelHeaderViewDelegate {
+    func updateHeaderButton() {
+            headerView.channelButton.isSelected = currentChannel.isFollowing;
     }
 }

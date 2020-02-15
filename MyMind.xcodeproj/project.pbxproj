@@ -25,7 +25,6 @@
 		8E84A55723F61BC600F39ABC /* UIView+LoadNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A55623F61BC600F39ABC /* UIView+LoadNib.swift */; };
 		8E84A56023F6284500F39ABC /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A55E23F6284500F39ABC /* HomeHeaderView.swift */; };
 		8E84A56123F6284500F39ABC /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */; };
-		8E84A56623F732F600F39ABC /* HeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56523F732F600F39ABC /* HeaderButton.swift */; };
 		8E84A56823F74EBF00F39ABC /* String+Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56723F74EBF00F39ABC /* String+Html.swift */; };
 		8E84A56A23F7F76800F39ABC /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56923F7F76800F39ABC /* WebServiceManager.swift */; };
 /* End PBXBuildFile section */
@@ -72,7 +71,6 @@
 		8E84A55623F61BC600F39ABC /* UIView+LoadNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LoadNib.swift"; sourceTree = "<group>"; };
 		8E84A55E23F6284500F39ABC /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
-		8E84A56523F732F600F39ABC /* HeaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderButton.swift; sourceTree = "<group>"; };
 		8E84A56723F74EBF00F39ABC /* String+Html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Html.swift"; sourceTree = "<group>"; };
 		8E84A56923F7F76800F39ABC /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,20 +123,18 @@
 		8E06579023F53B2B0009847A /* MyMind */ = {
 			isa = PBXGroup;
 			children = (
+				8E84A56B23F882E200F39ABC /* Controllers */,
 				8E84A56323F732D200F39ABC /* Components */,
 				8E84A55523F61BAA00F39ABC /* Extensions */,
 				8E0657CC23F60FE30009847A /* Views */,
 				8E0657C923F5EA0F0009847A /* Model */,
 				8E06579123F53B2B0009847A /* AppDelegate.swift */,
 				8E06579323F53B2B0009847A /* SceneDelegate.swift */,
-				8E06579523F53B2B0009847A /* ViewController.swift */,
 				8E06579723F53B2B0009847A /* Main.storyboard */,
 				8E06579A23F53B2F0009847A /* Assets.xcassets */,
 				8E06579C23F53B2F0009847A /* LaunchScreen.storyboard */,
 				8E06579F23F53B2F0009847A /* Info.plist */,
 				8E0657C123F5577F0009847A /* ChannelCell.swift */,
-				8E0657C323F563C00009847A /* ChannelDetailsController.swift */,
-				8E0657C523F5BF0C0009847A /* NewsViewController.swift */,
 				8E0657C723F5C04F0009847A /* ChannelDetailCell.swift */,
 			);
 			path = MyMind;
@@ -194,9 +190,18 @@
 		8E84A56323F732D200F39ABC /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				8E84A56523F732F600F39ABC /* HeaderButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		8E84A56B23F882E200F39ABC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E06579523F53B2B0009847A /* ViewController.swift */,
+				8E0657C323F563C00009847A /* ChannelDetailsController.swift */,
+				8E0657C523F5BF0C0009847A /* NewsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,7 +349,6 @@
 				8E06579623F53B2B0009847A /* ViewController.swift in Sources */,
 				8E0657C223F5577F0009847A /* ChannelCell.swift in Sources */,
 				8E06579223F53B2B0009847A /* AppDelegate.swift in Sources */,
-				8E84A56623F732F600F39ABC /* HeaderButton.swift in Sources */,
 				8E06579423F53B2B0009847A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

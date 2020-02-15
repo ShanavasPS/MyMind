@@ -13,11 +13,11 @@ protocol HomeHeaderViewDelegate {
 }
 
 class HomeHeaderView: UICollectionReusableView {
-    @IBOutlet weak var followingButton: HeaderButton!
+    @IBOutlet weak var followingButton: UIButton!
     
-    @IBOutlet weak var popularButton: HeaderButton!
+    @IBOutlet weak var popularButton: UIButton!
     
-    @IBOutlet weak var exploreButton: HeaderButton!
+    @IBOutlet weak var exploreButton: UIButton!
     
     var delegate: HomeHeaderViewDelegate?
     

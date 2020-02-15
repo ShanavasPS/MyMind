@@ -17,6 +17,19 @@ class ChannelDetailsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateTableHeader()
+        addNavBarImage();
+    }
+    
+    func addNavBarImage() {
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "Icon_navbar_Logo"))
+        imageView.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        imageView.contentMode = .scaleAspectFit
+
+        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+
+        titleView.addSubview(imageView)
+        titleView.backgroundColor = .clear
+        self.navigationItem.titleView = titleView
     }
 }
 

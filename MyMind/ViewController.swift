@@ -21,14 +21,13 @@ class ViewController: UICollectionViewController {
         
         webServiceManager.delegate = self;
         webServiceManager.fetchChannels();
-        
         navigationItem.backBarButtonItem = UIBarButtonItem(
             title: "",
             style: .plain,
             target: nil,
             action: nil
         )
-        
+        navigationItem.backBarButtonItem!.title = "";
         let myNib = UINib(nibName: "HomeHeaderView",bundle: nil)
         self.collectionView.register(myNib, forSupplementaryViewOfKind:UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HomeHeaderView")
     }
@@ -39,21 +38,15 @@ class ViewController: UICollectionViewController {
     }
 
     func addNavBarImage() {
-        let navController = navigationController!
-        
-        let image = #imageLiteral(resourceName: "Icon_navbar_Logo");
-        let imageView = UIImageView(image: image)
-        
-        let bannerWidth = navController.navigationBar.frame.size.width
-        let bannerHeight = navController.navigationBar.frame.size.height
-        
-        let bannerX = bannerWidth / 2 - image.size.width / 2
-        let bannerY = bannerHeight / 2 - image.size.height / 2
-        
-        imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth - 20, height: bannerHeight - 20)
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "Icon_navbar_Logo"))
+        imageView.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         imageView.contentMode = .scaleAspectFit
-        
-        navigationItem.titleView = imageView
+
+        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+
+        titleView.addSubview(imageView)
+        titleView.backgroundColor = .clear
+        self.navigationItem.titleView = titleView
     }
 }
 

@@ -73,9 +73,6 @@ extension ViewController {
                                                   for: indexPath) as! ChannelCell
     cell.channelImageView.image = UIImage(named: channelList[indexPath.row].channelImage);
     cell.channelName.text = channelList[indexPath.row].channelName;
-    let frame = CGRect(x: 0, y: 0, width: self.view.frame.width/2, height: self.view.frame.width/2)
-    cell.channelImageView.frame = frame;
-    
     return cell
   }
     

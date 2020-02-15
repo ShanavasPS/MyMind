@@ -101,7 +101,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ME0-ha-hkA" userLabel="Close Button">
-                                        <rect key="frame" x="20" y="49" width="18.666666666666671" height="34"/>
+                                        <rect key="frame" x="20" y="46" width="37" height="37"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" image="icon_navbar_close">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
@@ -141,19 +141,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_list_source" translatesAutoresizingMaskIntoConstraints="NO" id="oYi-88-1a3" userLabel="SourceImage">
-                                <rect key="frame" x="15" y="383" width="11" height="16"/>
+                                <rect key="frame" x="15" y="383" width="22" height="32"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKH-TV-nLC" userLabel="SourceName">
-                                <rect key="frame" x="41" y="383" width="42" height="20.666666666666686"/>
+                                <rect key="frame" x="52" y="383" width="42" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_list_time" translatesAutoresizingMaskIntoConstraints="NO" id="bc1-y9-y7q" userLabel="TimeImage">
-                                <rect key="frame" x="98" y="383" width="15" height="15"/>
+                                <rect key="frame" x="109" y="383" width="30" height="30"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFC-og-fBB" userLabel="TimeName">
-                                <rect key="frame" x="128" y="383" width="42" height="20.666666666666686"/>
+                                <rect key="frame" x="154" y="383" width="42" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -219,7 +219,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z47-c7-Dj6">
                             <size key="itemSize" width="200" height="200"/>
-                            <size key="estimatedItemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="50" height="80"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -238,7 +237,7 @@
                                             <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th0-cs-hFI">
-                                            <rect key="frame" x="19.999999999999996" y="153.66666666666666" width="52.666666666666657" height="26.333333333333343"/>
+                                            <rect key="frame" x="20.000000000000004" y="153.66666666666666" width="52.333333333333343" height="26.333333333333343"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -247,6 +246,7 @@
                                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="th0-cs-hFI" secondAttribute="bottom" constant="20" id="2Pe-lq-gIv"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="th0-cs-hFI" secondAttribute="trailing" constant="10" id="cHe-Aj-Gck"/>
                                         <constraint firstItem="th0-cs-hFI" firstAttribute="leading" secondItem="Kcn-6d-B3J" secondAttribute="leading" constant="20" id="nuc-7y-kbV"/>
                                     </constraints>
                                 </collectionViewCellContentView>

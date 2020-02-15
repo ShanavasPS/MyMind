@@ -8,6 +8,12 @@
 
 import Foundation
 
+enum ChannelType {
+    case popular
+    case explore
+    case none
+}
+
 struct News {
    var title: String
    var source: String
@@ -24,14 +30,18 @@ class Channel {
     let channelName : String;
     let channelImage: String;
     let followers: String;
-    var news:[News] = []
+    var news: [News];
     var currentNews: News;
-    init(name: String, image:String, followers: String) {
+    var channelType: ChannelType;
+    let isFollowing: Bool;
+    init(name: String, image:String, followers: String, channelType: ChannelType, isFollowing: Bool) {
         self.news = []
         self.channelName = name;
         self.channelImage = image;
         self.followers = followers;
         self.currentNews = News(title: "", source: "", time: "");
+        self.channelType = channelType;
+        self.isFollowing = isFollowing;
     }
     
     public func add(title: String, source: String, time: String) {
@@ -46,10 +56,10 @@ class Channels {
     
     init() {
         self.items = [];
-        self.currentChannel = Channel(name: "", image: "", followers: "");
+        self.currentChannel = Channel(name: "", image: "", followers: "", channelType: .none, isFollowing: false);
     }
     
-    public func add(name: String, image: String, followers: String) {
-        self.items.append(Channel(name: name, image: image, followers: followers))
+    public func add(name: String, image: String, followers: String, channelType: ChannelType, isFollowing: Bool) {
+        self.items.append(Channel(name: name, image: image, followers: followers, channelType: channelType, isFollowing: isFollowing))
     }
 }

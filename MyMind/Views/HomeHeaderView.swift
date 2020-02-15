@@ -8,12 +8,18 @@
 
 import UIKit
 
+protocol HomeHeaderViewDelegate {
+    func updateTableBasedonHeader(_ type: ChannelType);
+}
+
 class HomeHeaderView: UICollectionReusableView {
     @IBOutlet weak var followingButton: HeaderButton!
     
     @IBOutlet weak var popularButton: HeaderButton!
     
     @IBOutlet weak var exploreButton: HeaderButton!
+    
+    var delegate: HomeHeaderViewDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,8 +30,25 @@ class HomeHeaderView: UICollectionReusableView {
         guard let button = sender as? UIButton else {
             return
         }
+        
         followingButton.isSelected = (button.tag == followingButton.tag);
         popularButton.isSelected = (button.tag == popularButton.tag);
         exploreButton.isSelected = (button.tag == exploreButton.tag);
+        
+        var channelType: ChannelType = .none;
+        switch(button.tag) {
+            case 0:
+                channelType = .none
+                break
+            case 1:
+                channelType = .popular
+                break
+            case 2:
+                channelType = .explore
+            break
+            default:
+                break
+        }
+        delegate?.updateTableBasedonHeader(channelType);
     }
 }

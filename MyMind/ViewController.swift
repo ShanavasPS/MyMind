@@ -11,8 +11,9 @@ import UIKit
 class ViewController: UICollectionViewController {
 
     private let reuseIdentifier = "ChannelCell"
+    private var headerView:HomeHeaderView = HomeHeaderView();
     var channels = Channels.sharedInstance;
-        
+    var channelList:[Channel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavBarImage();
@@ -30,19 +31,20 @@ class ViewController: UICollectionViewController {
     }
     
     func loadChannels() {
-        channels.add(name: "FASHION", image: "Thumbnail_channel_Fashion", followers: "234k Followers");
-        channels.add(name: "SCIENCE", image: "Thumbnail_channel_Science", followers: "123k Followers");
-        channels.add(name: "AUTO", image: "Thumbnail_channel_Auto", followers: "100k Followers");
-        channels.add(name: "TECHNOLOGY", image: "Thumbnail_channel_Technology", followers: "23.6k Followers");
-        channels.add(name: "ENTERTAINMENT", image: "Thumbnail_channel_Entertainment", followers: "63k Followers");
-        channels.add(name: "ENVIRONMENT", image: "Thumbnail_channel_Environment", followers: "111k Followers");
-        channels.add(name: "FINANCES", image: "Thumbnail_channel_Finance", followers: "234k Followers");
-        channels.add(name: "TRAVEL", image: "Thumbnail_channel_Travel", followers: "422k Followers");
+        channels.add(name: "FASHION", image: "Thumbnail_channel_Fashion", followers: "234k Followers", channelType: .explore, isFollowing: true);
+        channels.add(name: "SCIENCE", image: "Thumbnail_channel_Science", followers: "123k Followers", channelType: .popular, isFollowing: true);
+        channels.add(name: "AUTO", image: "Thumbnail_channel_Auto", followers: "100k Followers", channelType: .explore, isFollowing: true);
+        channels.add(name: "TECHNOLOGY", image: "Thumbnail_channel_Technology", followers: "23.6k Followers", channelType: .popular, isFollowing: true);
+        channels.add(name: "ENTERTAINMENT", image: "Thumbnail_channel_Entertainment", followers: "63k Followers", channelType: .explore, isFollowing: true);
+        channels.add(name: "ENVIRONMENT", image: "Thumbnail_channel_Environment", followers: "111k Followers", channelType: .popular, isFollowing: true);
+        channels.add(name: "FINANCES", image: "Thumbnail_channel_Finance", followers: "234k Followers", channelType: .explore, isFollowing: true);
+        channels.add(name: "TRAVEL", image: "Thumbnail_channel_Travel", followers: "422k Followers", channelType: .popular, isFollowing: true);
         var index = 0;
         channels.items.map({_ in
             self.loadNews(index: index);
             index += 1;
             })
+        channelList = channels.items;
     }
     
     func loadNews(index: Int) {
@@ -85,14 +87,14 @@ extension ViewController {
   
   override func collectionView(_ collectionView: UICollectionView,
                                numberOfItemsInSection section: Int) -> Int {
-    return channels.items.count;
+    return channelList.count;
   }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
                                                   for: indexPath) as! ChannelCell
-    cell.channelImageView.image = UIImage(named: channels.items[indexPath.row].channelImage);
-    cell.channelName.text = channels.items[indexPath.row].channelName;
+    cell.channelImageView.image = UIImage(named: channelList[indexPath.row].channelImage);
+    cell.channelName.text = channelList[indexPath.row].channelName;
     let frame = CGRect(x: 0, y: 0, width: self.view.frame.width/2, height: self.view.frame.width/2)
     cell.channelImageView.frame = frame;
     
@@ -100,19 +102,34 @@ extension ViewController {
   }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        channels.currentChannel = channels.items[indexPath.row];
+        channels.currentChannel = channelList[indexPath.row];
         performSegue(withIdentifier: "showSelectedChannel", sender: nil);
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 
         if kind == UICollectionView.elementKindSectionHeader {
-            let headerView = self.collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
+            headerView = self.collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
                 withReuseIdentifier:"HomeHeaderView", for: indexPath) as! HomeHeaderView
+            headerView.delegate = self;
                 return headerView
             } else {
                 return UICollectionReusableView()
             }
+    }
+}
+
+extension ViewController: HomeHeaderViewDelegate {
+    func updateTableBasedonHeader(_ type: ChannelType) {
+        switch type {
+        case .popular:
+            channelList = channels.items.filter {$0.channelType == .popular};
+        case .explore:
+            channelList = channels.items.filter {$0.channelType == .explore};
+        case .none:
+            channelList = channels.items;
+        }
+        self.collectionView.reloadData();
     }
 }
 

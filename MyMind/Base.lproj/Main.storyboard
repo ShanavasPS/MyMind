@@ -55,6 +55,7 @@
                                     <constraints>
                                         <constraint firstItem="beC-Xu-LtA" firstAttribute="centerY" secondItem="oJN-xP-mXr" secondAttribute="centerY" id="07b-J0-cJU"/>
                                         <constraint firstItem="oJN-xP-mXr" firstAttribute="leading" secondItem="beC-Xu-LtA" secondAttribute="trailing" constant="14" id="9YS-Xc-ned"/>
+                                        <constraint firstItem="0HO-IU-pGZ" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Huk-fV-1h6" secondAttribute="trailingMargin" constant="15" id="CY8-uP-Guy"/>
                                         <constraint firstItem="u8T-l7-E33" firstAttribute="leading" secondItem="Huk-fV-1h6" secondAttribute="leading" constant="15" id="Dmj-6Q-uyE"/>
                                         <constraint firstItem="0HO-IU-pGZ" firstAttribute="baseline" secondItem="beC-Xu-LtA" secondAttribute="baseline" id="KqQ-AA-Fkw"/>
                                         <constraint firstItem="beC-Xu-LtA" firstAttribute="top" secondItem="oJN-xP-mXr" secondAttribute="top" id="LXR-Sf-aU8"/>
@@ -127,9 +128,6 @@
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AfY-rG-yig">
                                 <rect key="frame" x="0.0" y="88" width="414" height="280"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="280" id="Lkb-7O-k8w"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93d-qu-piW" userLabel="News Title">
                                 <rect key="frame" x="20" y="300" width="374" height="48"/>
@@ -261,7 +259,7 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6eZ-t3-BiU">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HomeHeaderView" id="6eZ-t3-BiU">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </collectionReusableView>

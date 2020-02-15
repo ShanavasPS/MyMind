@@ -27,6 +27,7 @@
 		8E84A56123F6284500F39ABC /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */; };
 		8E84A56623F732F600F39ABC /* HeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56523F732F600F39ABC /* HeaderButton.swift */; };
 		8E84A56823F74EBF00F39ABC /* String+Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56723F74EBF00F39ABC /* String+Html.swift */; };
+		8E84A56A23F7F76800F39ABC /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56923F7F76800F39ABC /* WebServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		8E84A56523F732F600F39ABC /* HeaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderButton.swift; sourceTree = "<group>"; };
 		8E84A56723F74EBF00F39ABC /* String+Html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Html.swift"; sourceTree = "<group>"; };
+		8E84A56923F7F76800F39ABC /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				8E0657CA23F5EAF50009847A /* News.swift */,
+				8E84A56923F7F76800F39ABC /* WebServiceManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				8E84A55723F61BC600F39ABC /* UIView+LoadNib.swift in Sources */,
 				8E0657C623F5BF0C0009847A /* NewsViewController.swift in Sources */,
 				8E0657CE23F610070009847A /* ChannelHeaderView.swift in Sources */,
+				8E84A56A23F7F76800F39ABC /* WebServiceManager.swift in Sources */,
 				8E06579623F53B2B0009847A /* ViewController.swift in Sources */,
 				8E0657C223F5577F0009847A /* ChannelCell.swift in Sources */,
 				8E06579223F53B2B0009847A /* AppDelegate.swift in Sources */,

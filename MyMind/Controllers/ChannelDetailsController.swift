@@ -85,8 +85,4 @@ extension ChannelDetailsViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return headerView;
     }
-    
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return CGFloat(Constants.Channel.Details.Header.Height);
-    }
 }

@@ -66,10 +66,8 @@ class ViewController: UICollectionViewController {
     }
     
     func updateLoadingMessage(message: String, visibility: Bool) {
-        DispatchQueue.main.async {
-          self.loadFailureMessageLabel.isHidden = !visibility;
-          self.loadFailureMessageLabel.text = message;
-        }
+        self.loadFailureMessageLabel.isHidden = !visibility;
+        self.loadFailureMessageLabel.text = message;
     }
 }
 
@@ -136,13 +134,16 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 // MARK: - WebServiceManagerDelegate
 extension ViewController: WebServiceManagerDelegate {
     func fetchChannelsSuccess() {
-        channelList = channelInstance.items;
-        updateChannelsBasedOnCategory();
-        updateLoadingMessage(message: "", visibility: false)
+        DispatchQueue.main.async {
+          self.updateChannelsBasedOnCategory();
+          self.updateLoadingMessage(message: "", visibility: false)
+        }
     }
     
     func fetchChannelsFailure() {
-        self.updateLoadingMessage(message: "Could not load the channels\nPlease try again later", visibility: true)
+        DispatchQueue.main.async {
+            self.updateLoadingMessage(message: "Could not load the channels\nPlease try again later", visibility: true)
+        }
     }
 }
 
@@ -160,8 +161,6 @@ extension ViewController: HomeHeaderViewDelegate {
             //Get the channels that are being followed
             channelList = channelInstance.items.filter {$0.isFollowing == true};
         }
-        DispatchQueue.main.async {
-          self.collectionView.reloadData();
-        }
+        self.collectionView.reloadData();
     }
 }

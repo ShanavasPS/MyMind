@@ -26,6 +26,11 @@ class NewsViewController: UIViewController {
         updateView();
     }
     
+    //Set the topbar color to white
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     func updateView() {
         channelTitle.text = currentChannel.channelName + Constants.Channel.Postfix;
         channelImage.image = UIImage(named: currentNews.image);

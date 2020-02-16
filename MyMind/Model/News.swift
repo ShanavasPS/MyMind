@@ -30,7 +30,7 @@ struct News: Decodable {
     }
 }
 
-struct Channel: Decodable {
+class Channel: Decodable {
     let channelName : String;
     let channelImage: String;
     let followers: String;

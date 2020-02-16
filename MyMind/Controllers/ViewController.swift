@@ -140,10 +140,10 @@ extension ViewController: HomeHeaderViewDelegate {
         switch channelInstance.selectedChannelType {
         case .popular:
             //Get the channels that are of popular category
-            channelList = channelInstance.items.filter {$0.channelType == 0};
+            channelList = channelInstance.items.filter {$0.channelType == .popular};
         case .explore:
             //Get the channels that are of explore category
-            channelList = channelInstance.items.filter {$0.channelType == 1};
+            channelList = channelInstance.items.filter {$0.channelType == .explore};
         case .none:
             //Get the channels that are being followed
             channelList = channelInstance.items.filter {$0.isFollowing == true};

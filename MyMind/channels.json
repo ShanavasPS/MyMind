@@ -1,10 +1,26 @@
 {
   "channels": [
+      {
+        "channelName" : "FASHION",
+        "channelImage": "Thumbnail_channel_Fashion",
+        "followers": "123K Followers",
+        "channelType": "Popular",
+        "isFollowing": true,
+        "news": []
+      },
+      {
+        "channelName" : "SCIENCE",
+        "channelImage": "Thumbnail_channel_Science",
+        "followers": "123K Followers",
+        "channelType": "Explore",
+        "isFollowing": true,
+        "news": []
+      },
     {
       "channelName" : "AUTO",
       "channelImage": "Thumbnail_channel_Auto",
       "followers": "123K Followers",
-      "channelType": 0,
+      "channelType": "Popular",
       "isFollowing": true,
       "news": [
           {
@@ -24,10 +40,42 @@
       ]
     },
     {
+      "channelName" : "TECHNOLOGY",
+      "channelImage": "Thumbnail_channel_Technology",
+      "followers": "123K Followers",
+      "channelType": "Explore",
+      "isFollowing": true,
+      "news": []
+    },
+    {
       "channelName" : "ENTERTAINMENT",
       "channelImage": "Thumbnail_channel_Entertainment",
       "followers": "123K Followers",
-      "channelType": 0,
+      "channelType": "Popular",
+      "isFollowing": true,
+      "news": []
+    },
+    {
+      "channelName" : "ENIVORNMENT",
+      "channelImage": "Thumbnail_channel_Environment",
+      "followers": "123K Followers",
+      "channelType": "Explore",
+      "isFollowing": true,
+      "news": []
+    },
+    {
+      "channelName" : "FINANCE",
+      "channelImage": "Thumbnail_channel_Finance",
+      "followers": "123K Followers",
+      "channelType": "Popular",
+      "isFollowing": true,
+      "news": []
+    },
+    {
+      "channelName" : "TRAVEL",
+      "channelImage": "Thumbnail_channel_Travel",
+      "followers": "123K Followers",
+      "channelType": "Explore",
       "isFollowing": true,
       "news": []
     }

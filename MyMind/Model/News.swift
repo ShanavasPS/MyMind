@@ -8,10 +8,10 @@
 
 import Foundation
 
-enum ChannelType {
-    case popular
-    case explore
-    case none
+enum ChannelType: String, Codable {
+    case popular = "Popular"
+    case explore = "Explore"
+    case none = ""
 }
 
 struct News: Decodable {
@@ -34,10 +34,10 @@ struct Channel: Decodable {
     let channelName : String;
     let channelImage: String;
     let followers: String;
-    var channelType: Int;
+    var channelType: ChannelType;
     var isFollowing: Bool;
     var news: [News];
-    init(name: String, image:String, followers: String, channelType: Int, isFollowing: Bool) {
+    init(name: String, image:String, followers: String, channelType: ChannelType, isFollowing: Bool) {
         self.news = []
         self.channelName = name;
         self.channelImage = image;
@@ -61,7 +61,7 @@ class Channels {
     init() {
         self.items = [];
         self.selectedChannelType = .none;
-        self.currentChannel = Channel(name: "", image: "", followers: "", channelType: 0, isFollowing: false);
+        self.currentChannel = Channel(name: "", image: "", followers: "", channelType: .none, isFollowing: false);
         self.currentNews = News(title: "", source: "", time: "", image: "", news: "");
     }
 }

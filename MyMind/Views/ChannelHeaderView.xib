@@ -18,9 +18,8 @@
         <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o7A-dZ-J20">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7A-dZ-J20">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJi-sD-nVC">
                     <rect key="frame" x="0.0" y="40" width="414" height="24"/>
@@ -58,9 +57,13 @@
                 <constraint firstItem="1ux-ki-Cp0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Qfl-gu-RGZ"/>
                 <constraint firstItem="lCA-He-HGW" firstAttribute="top" secondItem="uJi-sD-nVC" secondAttribute="bottom" constant="20" id="Rap-FF-9oq"/>
                 <constraint firstItem="uJi-sD-nVC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a4b-OE-oZO"/>
+                <constraint firstAttribute="bottom" secondItem="o7A-dZ-J20" secondAttribute="bottom" id="aBy-20-wOH"/>
                 <constraint firstAttribute="trailing" secondItem="uJi-sD-nVC" secondAttribute="trailing" id="fhR-8w-bOX"/>
                 <constraint firstItem="1ux-ki-Cp0" firstAttribute="top" secondItem="lCA-He-HGW" secondAttribute="bottom" constant="25" id="hao-Ne-ym1"/>
+                <constraint firstItem="o7A-dZ-J20" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lb9-O4-MXO"/>
                 <constraint firstAttribute="bottom" secondItem="1ux-ki-Cp0" secondAttribute="bottom" constant="40" id="oTf-sa-AY9"/>
+                <constraint firstAttribute="trailing" secondItem="o7A-dZ-J20" secondAttribute="trailing" id="waa-Ql-Mpj"/>
+                <constraint firstItem="o7A-dZ-J20" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wwc-Mh-Drc"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

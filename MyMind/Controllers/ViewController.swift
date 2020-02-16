@@ -23,7 +23,7 @@ class ViewController: UICollectionViewController {
         setUpNavigationBar();
         registerCollectionViewHeader();
 
-        updateLoadingMessage(message: "Loading channels...", visibility: true)
+        updateLoadingMessage(message: Constants.Channel.LoadingMessage, visibility: true)
         
         webServiceManager.delegate = self;
         webServiceManager.fetchChannels();
@@ -65,7 +65,7 @@ class ViewController: UICollectionViewController {
         self.navigationItem.titleView = titleView
     }
     
-    func updateLoadingMessage(message: String, visibility: Bool) {
+    func updateLoadingMessage(message: String = "", visibility: Bool) {
         self.loadFailureMessageLabel.isHidden = !visibility;
         self.loadFailureMessageLabel.text = message;
     }
@@ -80,9 +80,9 @@ extension ViewController {
   override func collectionView(_ collectionView: UICollectionView,
                                numberOfItemsInSection section: Int) -> Int {
     if(channelList.count == 0) {
-        self.updateLoadingMessage(message: "There are no channels available", visibility: true)
+        self.updateLoadingMessage(message: Constants.Channel.NoChannelsMessage, visibility: true)
     } else {
-        self.updateLoadingMessage(message: "", visibility: false)
+        self.updateLoadingMessage(visibility: false)
     }
     return channelList.count;
   }
@@ -141,13 +141,13 @@ extension ViewController: WebServiceManagerDelegate {
     func fetchChannelsSuccess() {
         DispatchQueue.main.async {
           self.updateChannelsBasedOnCategory();
-          self.updateLoadingMessage(message: "", visibility: false)
+          self.updateLoadingMessage(visibility: false)
         }
     }
     
     func fetchChannelsFailure() {
         DispatchQueue.main.async {
-            self.updateLoadingMessage(message: "Could not load the channels\nPlease try again later", visibility: true)
+            self.updateLoadingMessage(message: Constants.Channel.LoadFailureMessage, visibility: true)
         }
     }
 }

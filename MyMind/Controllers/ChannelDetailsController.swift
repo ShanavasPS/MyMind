@@ -60,7 +60,7 @@ extension ChannelDetailsViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if currentChannel.news.count == 0 {
-            tableView.setEmptyView(title: "The Channel don't have any news.", message: "The news will be in here.")
+            tableView.setEmptyView(title: Constants.Channel.Details.EmptyMessageTitle, message: Constants.Channel.Details.EmptyMessage)
         }
         else {
             tableView.restore()

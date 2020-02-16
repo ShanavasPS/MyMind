@@ -12,6 +12,9 @@ struct Constants {
     
     struct Channel {
         static let Postfix = " CHANNEL"
+        static let LoadFailureMessage = "Could not load the channels\nPlease try again later";
+        static let LoadingMessage = "Loading channels...";
+        static let NoChannelsMessage = "There are no channels available";
         
         struct Cell {
             static let ReuseIdentifier = "ChannelCell"
@@ -25,6 +28,9 @@ struct Constants {
         }
         
         struct Details {
+            
+            static let EmptyMessage = "The news will be in here.";
+            static let EmptyMessageTitle = "The Channel don't have any news.";
             
             struct Cell {
                 static let ReuseIdentifier = "ChannelDetailCell"

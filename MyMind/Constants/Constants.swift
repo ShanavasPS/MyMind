@@ -13,7 +13,6 @@ struct Constants {
     struct Channel {
         static let Postfix = " CHANNEL"
         
-
         struct Cell {
             static let ReuseIdentifier = "ChannelCell"
             private static let NumberOfColumns = 2;
@@ -29,10 +28,6 @@ struct Constants {
             
             struct Cell {
                 static let ReuseIdentifier = "ChannelDetailCell"
-            }
-            
-            struct Header {
-                static let Height = 200.0;
             }
         }
     }

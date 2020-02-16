@@ -128,6 +128,10 @@ extension ViewController: WebServiceManagerDelegate {
         channelList = channels.items;
         updateChannelsBasedOnCategory();
     }
+    
+    func fetchChannelsFailure() {
+        
+    }
 }
 
 // MARK: - HomeHeaderViewDelegate

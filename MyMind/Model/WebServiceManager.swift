@@ -10,6 +10,7 @@ import Foundation
 
 protocol WebServiceManagerDelegate {
     func fetchChannelsSuccess();
+    func fetchChannelsFailure();
 }
 
 class WebServiceManager {
@@ -22,8 +23,20 @@ class WebServiceManager {
     }
     
     public func fetchChannels() {
-        loadChannels();
-        delegate?.fetchChannelsSuccess();
+        if let path = Bundle.main.path(forResource: "test", ofType: "json") {
+            do {
+                  let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                  let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                
+                  if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let users = jsonResult["users"] as? [Any] {
+                            print(users)
+                    loadChannels();
+                    delegate?.fetchChannelsSuccess();
+                  }
+              } catch {
+                   delegate?.fetchChannelsFailure();
+              }
+        }
     }
     
     func loadChannels() {

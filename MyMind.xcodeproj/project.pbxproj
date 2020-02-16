@@ -28,7 +28,6 @@
 		8E84A56823F74EBF00F39ABC /* String+Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56723F74EBF00F39ABC /* String+Html.swift */; };
 		8E84A56A23F7F76800F39ABC /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56923F7F76800F39ABC /* WebServiceManager.swift */; };
 		8E84A56F23F92C7C00F39ABC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56E23F92C7C00F39ABC /* Constants.swift */; };
-		8E84A57123F9439200F39ABC /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E84A57023F9439200F39ABC /* test.json */; };
 		8E84A57323F9446C00F39ABC /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E84A57223F9446B00F39ABC /* channels.json */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +76,6 @@
 		8E84A56723F74EBF00F39ABC /* String+Html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Html.swift"; sourceTree = "<group>"; };
 		8E84A56923F7F76800F39ABC /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		8E84A56E23F92C7C00F39ABC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		8E84A57023F9439200F39ABC /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		8E84A57223F9446B00F39ABC /* channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				8E84A57223F9446B00F39ABC /* channels.json */,
-				8E84A57023F9439200F39ABC /* test.json */,
 				8E84A56D23F92C5600F39ABC /* Constants */,
 				8E84A56C23F8882B00F39ABC /* Cells */,
 				8E84A56B23F882E200F39ABC /* Controllers */,
@@ -331,7 +328,6 @@
 				8E06579923F53B2B0009847A /* Main.storyboard in Resources */,
 				8E0657D023F610480009847A /* ChannelHeaderView.xib in Resources */,
 				8E84A57323F9446C00F39ABC /* channels.json in Resources */,
-				8E84A57123F9439200F39ABC /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

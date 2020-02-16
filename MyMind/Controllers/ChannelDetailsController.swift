@@ -11,9 +11,6 @@ import Foundation
 
 class ChannelDetailsViewController: UITableViewController {
     
-    private let reuseIdentifier = "ChannelDetailCell";
-    private let selectedNewsSegue = "showSelectedNews";
-    private let channelPostfix = " CHANNEL";
     private let headerView = ChannelHeaderView();
     private let currentChannel = Channels.sharedInstance.currentChannel;
     
@@ -37,9 +34,17 @@ class ChannelDetailsViewController: UITableViewController {
     
     //Setup the table view header using the current channel details
     func setupTableHeader(){
+        headerView.delegate = self;
         headerView.channelImage.image = UIImage(named: currentChannel.channelImage);
         headerView.channelFollowers.text = currentChannel.followers;
-        headerView.channelName.text = currentChannel.channelName + channelPostfix;
+        headerView.channelName.text = currentChannel.channelName + Constants.Channel.Postfix;
+        updateHeaderFollowButton();
+    }
+}
+
+// MARK: - ChannelHeaderViewDelegate
+extension ChannelDetailsViewController: ChannelHeaderViewDelegate {
+    func updateHeaderFollowButton() {
         headerView.channelButton.isSelected = currentChannel.isFollowing;
     }
 }
@@ -55,7 +60,7 @@ extension ChannelDetailsViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier,
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Channel.Details.Cell.ReuseIdentifier,
         for: indexPath) as! ChannelDetailCell
         cell.newsTitle.text = currentChannel.news[indexPath.row].title;
         cell.newsSource.text = currentChannel.news[indexPath.row].source;
@@ -65,7 +70,7 @@ extension ChannelDetailsViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         currentChannel.currentNews = currentChannel.news[indexPath.row];
-        performSegue(withIdentifier: selectedNewsSegue, sender: nil);
+        performSegue(withIdentifier: Constants.Segues.SelectedNews, sender: nil);
     }
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -73,6 +78,6 @@ extension ChannelDetailsViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 200;
+        return CGFloat(Constants.Channel.Details.Header.Height);
     }
 }

@@ -9,33 +9,44 @@
 import UIKit
 
 class ViewController: UICollectionViewController {
-
-    private let reuseIdentifier = "ChannelCell"
+    
     private var headerView:HomeHeaderView = HomeHeaderView();
     private var webServiceManager = WebServiceManager.sharedInstance;
-    var channels = Channels.sharedInstance;
-    var channelList:[Channel] = []
+    private var channels = Channels.sharedInstance;
+    private var channelList:[Channel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        addNavBarImage();
+        
+        setUpNavigationBar();
+        registerCollectionViewHeader();
         
         webServiceManager.delegate = self;
         webServiceManager.fetchChannels();
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        updateChannelsBasedOnCategory();
+    }
+    
+    func registerCollectionViewHeader() {
+        let myNib = UINib(nibName: Constants.Channel.Header.XibName,bundle: nil)
+        self.collectionView.register(myNib, forSupplementaryViewOfKind:UICollectionView.elementKindSectionHeader, withReuseIdentifier: Constants.Channel.Header.ReuseIdentifier)
+    }
+    
+    func setUpNavigationBar() {
+        //Add an icon to the navigation bar
+        addNavBarImage();
+        //Remove the back button text
         navigationItem.backBarButtonItem = UIBarButtonItem(
             title: "",
             style: .plain,
             target: nil,
             action: nil
         )
+        //Set the topbar color to white
         navigationController?.navigationBar.barStyle = .black
-        navigationItem.backBarButtonItem!.title = "";
-        let myNib = UINib(nibName: "HomeHeaderView",bundle: nil)
-        self.collectionView.register(myNib, forSupplementaryViewOfKind:UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HomeHeaderView")
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated);
-        updateTableBasedonHeader(channels.selectedChannelType);
     }
     
     func addNavBarImage() {
@@ -63,7 +74,7 @@ extension ViewController {
   }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.Channel.Cell.ReuseIdentifier,
                                                   for: indexPath) as! ChannelCell
     cell.channelImageView.image = UIImage(named: channelList[indexPath.row].channelImage);
     cell.channelName.text = channelList[indexPath.row].channelName;
@@ -72,14 +83,14 @@ extension ViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         channels.currentChannel = channelList[indexPath.row];
-        performSegue(withIdentifier: "showSelectedChannel", sender: nil);
+        performSegue(withIdentifier: Constants.Segues.SelectedChannel, sender: nil);
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 
         if kind == UICollectionView.elementKindSectionHeader {
             headerView = self.collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
-                withReuseIdentifier:"HomeHeaderView", for: indexPath) as! HomeHeaderView
+                withReuseIdentifier: Constants.Channel.Header.ReuseIdentifier, for: indexPath) as! HomeHeaderView
             headerView.delegate = self;
                 return headerView
             } else {
@@ -88,33 +99,13 @@ extension ViewController {
     }
 }
 
-extension ViewController: HomeHeaderViewDelegate {
-    func updateTableBasedonHeader(_ type: ChannelType) {
-        switch type {
-        case .popular:
-            channelList = channels.items.filter {$0.channelType == .popular};
-        case .explore:
-            channelList = channels.items.filter {$0.channelType == .explore};
-        case .none:
-            channelList = channels.items.filter {$0.isFollowing == true};
-        }
-        channels.selectedChannelType = type;
-        self.collectionView.reloadData();
-    }
-}
-
-extension ViewController: WebServiceManagerDelegate {
-    func fetchChannelsSuccess() {
-        channelList = channels.items;
-        updateTableBasedonHeader(channels.selectedChannelType);
-    }
-}
-
+// MARK: - UICollectionViewDelegateFlowLayout
 extension ViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = view.frame.size.width
-        return CGSize(width: width * 0.5, height: width * 0.5)
+        //Width should be equal to accodomate the number of elements in the column
+        let width = view.frame.size.width * CGFloat(Constants.Channel.Cell.MultiplyingFactor);
+        return CGSize(width: width, height: width)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -129,4 +120,30 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         return 0
     }
 
+}
+
+// MARK: - WebServiceManagerDelegate
+extension ViewController: WebServiceManagerDelegate {
+    func fetchChannelsSuccess() {
+        channelList = channels.items;
+        updateChannelsBasedOnCategory();
+    }
+}
+
+// MARK: - HomeHeaderViewDelegate
+extension ViewController: HomeHeaderViewDelegate {
+    func updateChannelsBasedOnCategory() {
+        switch channels.selectedChannelType {
+        case .popular:
+            //Get the channels that are of popular category
+            channelList = channels.items.filter {$0.channelType == .popular};
+        case .explore:
+            //Get the channels that are of explore category
+            channelList = channels.items.filter {$0.channelType == .explore};
+        case .none:
+            //Get the channels that are being followed
+            channelList = channels.items.filter {$0.isFollowing == true};
+        }
+        self.collectionView.reloadData();
+    }
 }

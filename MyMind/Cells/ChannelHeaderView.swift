@@ -9,13 +9,19 @@
 import Foundation
 import UIKit
 
+protocol ChannelHeaderViewDelegate {
+    func updateHeaderFollowButton();
+}
+
 class ChannelHeaderView: UIView {
     var view: UIView!
     @IBOutlet weak var channelName: UILabel!
     @IBOutlet weak var channelImage: UIImageView!
     @IBOutlet weak var channelFollowers: UILabel!
     @IBOutlet weak var channelButton: UIButton!
-        
+    
+    var delegate: ChannelHeaderViewDelegate?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -33,7 +39,7 @@ class ChannelHeaderView: UIView {
     @IBAction func followButtonClicked(_ sender: Any) {
         let isFollowing = Channels.sharedInstance.currentChannel.isFollowing;
         Channels.sharedInstance.currentChannel.isFollowing = !isFollowing;
-        channelButton.isSelected = isFollowing;
+        delegate?.updateHeaderFollowButton();
     }
 }
 

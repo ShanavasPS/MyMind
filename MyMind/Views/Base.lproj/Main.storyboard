@@ -102,7 +102,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ME0-ha-hkA" userLabel="Close Button">
-                                        <rect key="frame" x="20" y="49" width="18.666666666666671" height="34"/>
+                                        <rect key="frame" x="10.000000000000002" y="49" width="18.666666666666671" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" image="icon_navbar_close">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
@@ -123,7 +123,7 @@
                                     <constraint firstAttribute="bottom" secondItem="ME0-ha-hkA" secondAttribute="bottom" constant="5" id="FbG-Z2-krb"/>
                                     <constraint firstAttribute="bottom" secondItem="b8g-ca-fm8" secondAttribute="bottom" constant="10" id="Iff-2Q-eLJ"/>
                                     <constraint firstItem="b8g-ca-fm8" firstAttribute="centerX" secondItem="aEC-pa-bfk" secondAttribute="centerX" id="Qb5-B7-yDK"/>
-                                    <constraint firstItem="ME0-ha-hkA" firstAttribute="leading" secondItem="aEC-pa-bfk" secondAttribute="leading" constant="20" id="yQS-bK-sSr"/>
+                                    <constraint firstItem="ME0-ha-hkA" firstAttribute="leading" secondItem="aEC-pa-bfk" secondAttribute="leading" constant="10" id="yQS-bK-sSr"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AfY-rG-yig">

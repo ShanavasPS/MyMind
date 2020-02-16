@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HomeHeaderViewDelegate {
-    func updateTableBasedonHeader(_ type: ChannelType);
+    func updateChannelsBasedOnCategory();
 }
 
 class HomeHeaderView: UICollectionReusableView {
@@ -47,6 +47,7 @@ class HomeHeaderView: UICollectionReusableView {
             default:
                 break
         }
-        delegate?.updateTableBasedonHeader(channelType);
+        Channels.sharedInstance.selectedChannelType = channelType;
+        delegate?.updateChannelsBasedOnCategory();
     }
 }

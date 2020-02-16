@@ -27,6 +27,7 @@
 		8E84A56123F6284500F39ABC /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */; };
 		8E84A56823F74EBF00F39ABC /* String+Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56723F74EBF00F39ABC /* String+Html.swift */; };
 		8E84A56A23F7F76800F39ABC /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56923F7F76800F39ABC /* WebServiceManager.swift */; };
+		8E84A56F23F92C7C00F39ABC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56E23F92C7C00F39ABC /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		8E84A55F23F6284500F39ABC /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		8E84A56723F74EBF00F39ABC /* String+Html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Html.swift"; sourceTree = "<group>"; };
 		8E84A56923F7F76800F39ABC /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		8E84A56E23F92C7C00F39ABC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		8E06579023F53B2B0009847A /* MyMind */ = {
 			isa = PBXGroup;
 			children = (
+				8E84A56D23F92C5600F39ABC /* Constants */,
 				8E84A56C23F8882B00F39ABC /* Cells */,
 				8E84A56B23F882E200F39ABC /* Controllers */,
 				8E84A55523F61BAA00F39ABC /* Extensions */,
@@ -202,6 +205,14 @@
 				8E84A55E23F6284500F39ABC /* HomeHeaderView.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		8E84A56D23F92C5600F39ABC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8E84A56E23F92C7C00F39ABC /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +359,7 @@
 				8E84A56A23F7F76800F39ABC /* WebServiceManager.swift in Sources */,
 				8E06579623F53B2B0009847A /* ViewController.swift in Sources */,
 				8E0657C223F5577F0009847A /* ChannelCell.swift in Sources */,
+				8E84A56F23F92C7C00F39ABC /* Constants.swift in Sources */,
 				8E06579223F53B2B0009847A /* AppDelegate.swift in Sources */,
 				8E06579423F53B2B0009847A /* SceneDelegate.swift in Sources */,
 			);

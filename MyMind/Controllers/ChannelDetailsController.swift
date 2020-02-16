@@ -46,7 +46,9 @@ class ChannelDetailsViewController: UITableViewController {
 // MARK: - ChannelHeaderViewDelegate
 extension ChannelDetailsViewController: ChannelHeaderViewDelegate {
     func updateHeaderFollowButton() {
-        headerView.channelButton.isSelected = currentChannel.isFollowing;
+        DispatchQueue.main.async {
+            self.headerView.channelButton.isSelected = self.currentChannel.isFollowing;
+        }
     }
 }
 

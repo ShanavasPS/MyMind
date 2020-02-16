@@ -15,11 +15,15 @@ class ViewController: UICollectionViewController {
     private var channelInstance = Channels.sharedInstance;
     private var channelList:[Channel] = []
     
+    @IBOutlet weak var loadFailureMessageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpNavigationBar();
         registerCollectionViewHeader();
+
+        updateLoadingMessage(message: "Loading channels...", visibility: true)
         
         webServiceManager.delegate = self;
         webServiceManager.fetchChannels();
@@ -59,6 +63,13 @@ class ViewController: UICollectionViewController {
         titleView.addSubview(imageView)
         titleView.backgroundColor = .clear
         self.navigationItem.titleView = titleView
+    }
+    
+    func updateLoadingMessage(message: String, visibility: Bool) {
+        DispatchQueue.main.async {
+          self.loadFailureMessageLabel.isHidden = !visibility;
+          self.loadFailureMessageLabel.text = message;
+        }
     }
 }
 
@@ -127,10 +138,11 @@ extension ViewController: WebServiceManagerDelegate {
     func fetchChannelsSuccess() {
         channelList = channelInstance.items;
         updateChannelsBasedOnCategory();
+        updateLoadingMessage(message: "", visibility: false)
     }
     
     func fetchChannelsFailure() {
-        
+        self.updateLoadingMessage(message: "Could not load the channels\nPlease try again later", visibility: true)
     }
 }
 
@@ -148,6 +160,8 @@ extension ViewController: HomeHeaderViewDelegate {
             //Get the channels that are being followed
             channelList = channelInstance.items.filter {$0.isFollowing == true};
         }
-        self.collectionView.reloadData();
+        DispatchQueue.main.async {
+          self.collectionView.reloadData();
+        }
     }
 }

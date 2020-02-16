@@ -223,6 +223,13 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Could not load the channels  Please try again later" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ngo-DY-6r6">
+                            <rect key="frame" x="0.0" y="-88" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChannelCell" id="3Ox-0s-AUH" customClass="ChannelCell" customModule="MyMind" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="80" width="200" height="200"/>
@@ -270,6 +277,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="3ep-Is-ckg"/>
                     <connections>
+                        <outlet property="loadFailureMessageLabel" destination="ngo-DY-6r6" id="Vo7-MM-RNg"/>
                         <segue destination="1Mp-ME-uFA" kind="show" identifier="showSelectedChannel" id="FqM-sM-c4b"/>
                     </connections>
                 </collectionViewController>

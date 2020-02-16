@@ -6,7 +6,28 @@
         "followers": "123K Followers",
         "channelType": "Popular",
         "isFollowing": true,
-        "news": []
+        "news": [{
+        "title": "Can glamorous gowns, basement hideouts and surprise appearances save New York Fashion Week?",
+        "source": "CNN",
+        "time": "Feb 14, 2020",
+        "image": "Thumbnail_channel_Fashion",
+        "news": "It's no secret that the buzz surrounding New York Fashion Week has slowed to a flutter, with America's most experimental designers like Virgil Abloh and Heron Preston ditching the gritty Big Apple in favor of the more pomp displays in Paris and Milan. <br/><br/> Last season, the Council of Fashion Designers of America (CFDA) ushered in new changes including cutting the week down to five days. This season, in a surprising twist, CFDA Chairman and <b>Mr. New York,</b> Tom Ford (the man responsible for boiling the event down to just 5 days) traded in his Manhattan-centric show for a celeb-packed spectacle in Los Angeles that produced a hoard of swoon-worthy chainmail and velvet gowns. <br/><br/> The event coincided with Oscars weekend and underscored a growing tension for American designers. Do they bolster their bottom lines by meeting their core customers where they're physically at? Or do they head to New York twice a year to stay in sync with their contemporaries? <br/><br/> Fords move left calendar fixtures Michael Kors, Marc Jacobs and new faces such as recent CFDA/Vogue Fashion Fund winner Christopher John Rogers and experimental label PriscaVera to convince audiences that New York Fashion Week still matters."
+        },
+        {
+        "title": "Why the NBA All-Star Game is a runway in its own right",
+        "source": "CNN",
+        "time": "Feb 14, 2020",
+        "image": "Thumbnail_channel_Fashion",
+        "news":"ll-Star Weekend, which kicks off tonight, has always been a barometer for how far the NBA has come as a brand. It's where powerful forces (media, celebrity, advertisers, the league's old and new guard) meet -- and, on occasion, remember fallen icons like Kobe Bryant. <br><br> But it is also basketball's biggest party of the year. And that means one thing: Players will be in full-swag mode right up until Sunday's 69th annual All-Star Game tips off at the United Center in Chicago. Chances are we'll see most, if not all, of them step onto the court in some kind of ultramodern, statement-making shoe. <br><br> Professional b-ballers are extremely competitive, and a bit show-offy. By now, they've caught onto the fact that it's not just highlight-reel dunks and long-range three-pointers that can elicit oohs and aahs from crowds. It's also about how you look in action. <br><br> Which is why, over the last decade, Russell Westbrook (feet pictured top), Damian Lillard and others have become global ambassadors for sportswear giants -- Westbrook for Nike, Lillard for Adidas -- upping their style game while essentially serving as major marketing pawns for these brands to stand out and generate social media hype."
+        },
+        {
+        "title": "Spike Lee pays tribute to Kobe Bryant in custom Oscars suit",
+        "source": "CNN",
+        "time": "Feb 10, 2020",
+        "image": "Thumbnail_channel_Fashion",
+        "news":"pike Lee paid a colorful tribute to Kobe Bryant at the Oscars by arriving in a purple-and-gold Gucci suit marked with the late basketball star's jersey number. <br> <br>The legendary director had <b>24</b> embroidered on his back and across his lapel, while his custom outfit's colors nodded to the LA Lakers, where Bryant spent his entire professional career. Lee's Instagram account was filled with tributes to Bryant in the days following the helicopter accident that killed the former player and eight others just over two weeks ago. Among the victims was Bryant's 13-year-old daughter Gianna. <br> <br> The filmmaker had a longstanding association with the star, having directed <b>Kobe Doin' Work,</b> a 2009 documentary following a whole day in his life. <br> <br> Arriving Sunday night at Hollywood's Dolby Theater, where he is set to present an award at the 92nd Academy Awards, Lee completed his look with a purple hat, glasses and a pair of Nike Kobe 9 Elite <b>Strategy</b> sneakers, one of the many designs to emerge from Bryant's long-standing collaboration with the brand."
+        }
+        ]
       },
       {
         "channelName" : "SCIENCE",
@@ -27,35 +48,28 @@
                 "source": "CNN",
                 "time": "Apr 3, 2015",
                 "image": "Thumbnail_channel_Science",
-                "news": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there's huge variety of the state of the ice.<br/><br/> <b>So what does this new record for the lowest level of winter ice actually mean?</b><br/><br/>For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade."
+                "news": "Archaeologists searching for a lost city in the jungles of Honduras have discovered the urban remains of what they believe is a vanished ancient civilization, National Geographic reports. <br/><br/> A writer and photographer for the magazine accompanied a team of scientists to Honduras' Mosquitia region on the trail of a legendary <b>White City</b> or <b>City of the Monkey God.</b> <br/><br/> The expedition was launched after aerial light detection scanning -- known as LIDAR -- uncovered what appeared to be man-made structures below the rainforest, National Geographic said. <br/><br/> Seeking to confirm the discovery, a team of U.S. and Honduran archaeologists, a LIDAR engineer, an ethnobotanist, anthropologists and documentary filmmakers entered the remote region. They were protected by Honduran Special forces, the magazine said."
             },
             {
                 "title": "The balloons that could fly the tourists to the end of space",
                 "source": "CNN",
-                "time": "Apr 1, 2015",
+                "time": "Apr 5, 2016",
                 "image": "Thumbnail_channel_Science",
-                "news": ""
+                "news": "Instead of rocket-powered sub-orbital flights like those of Virgin Galactic, could high-altitude ballooning become the most viable way of letting paying tourists experience space -- or at least something thrillingly close to it?<br/><br/>Ballooning is already tried and tested technology -- It's the origin of space travel, explains Annelie Schoenmaker, external relations and legal officer for Zero2infinity, a Spanish company that plans to launch passengers to near space using balloons known as Bloons for €110,000 ($124,000) a time.<br/><br/>Zero2infinity is one of two organizations hoping to use pressurized capsules suspended beneath helium balloons as a way to take tourists into near space.<br/><br/>Flights using helium-filled balloons began in the early 1930s. For me this time was what I call the first space race, as it was the first time we went into the stratosphere, explains Dr Jonathan Clark, an associate professor in neurology and space medicine, who has advised on both Red Bull Stratos and StratEx -- the project that saw Google executive Alan Eustace make a record-breaking space dive, assisted by ballooning company World View Enterprises."
             },
             {
                 "title": "In the Prawn Nebula, a Nursery for Newborn stars",
                 "source": "The New York Times",
                 "time": "March 30, 2015",
                 "image": "Thumbnail_channel_Science",
-                "news": ""
+                "news": "A new view of the Prawn Nebula shows cosmic recycling at work: Glowing clusters of newborn stars illuminate surrounding gas, expelled from an earlier stellar generation, which will eventually form into even newer stars.<br/><br/> The 2.2-meter telescope at the European Southern Obsevatory's La Silla Observatory in Chile snapped a choice section of the reddish nebula studded by young blue stars in a newly released image. The nebula, also called Gum 56 and IC 4628, is hard to see with the naked eye although it's around 250 light-years across — it is very faint, and mostly emits light at wavelengths not visible to humans. <br/><br/> That invisibility conceals a lot of action, as new stars form from the stellar nursery of the nebula's gas and debris: The material forming these new stars includes the remains of the most massive stars from an older generation that have already ended their lives and ejected their material in violent supernova explosions, ESO officials said in a statement. Thus the cycle of stellar life and death continues. When the dust and gas grows dense enough, a portion will collapse down into the beginnings of a star."
             },
             {
                 "title": "What will the battleship of the Future look like?",
                 "source": "Popular Science",
                 "time": "Apr 1, 2015",
                 "image": "Thumbnail_channel_Science",
-                "news": ""
-            },
-            {
-                "title": "What will the battleship of the Future look like?",
-                "source": "Popular Science",
-                "time": "Apr 1, 2015",
-                "image": "Thumbnail_channel_Science",
-                "news": ""
+                "news": "Just like video killed the radio star, airplanes killed the battleship. After a few centuries of innovation, large, gun-firing ships suddenly found themselves in World War II outranged and outmatched by flat-topped vessels with no guns at all. Aircraft carriers could send their fighters and torpedo-bombers to attack at distances far beyond the reach of cannons. It was a sea-change in naval combat, and big battleships have yet to regain their prominence. That doesn't mean they won't someday. <br/><br/> Startpoint, a maritime think-tank and design team funded by Britain’s Royal Navy and the Ministry of Defence, released concept art for the warship of 2050, and it’s a slick beauty that combines the best features of both battleships and aircraft carriers into one small, low-profile body <br/><br/> Dubbed the T2050, the concept looks like a cross between the U.S. Navy's experimental Sea Shadow, a trimaran, and a G.I. Joe playset. In design, it borrows heavily from the U.S. Navy's Zumwalt destroyer, a highly automated vessel built to carry weapons that don't exist yet. Like the Zumwalt, T2050 features a landing pad in the back. In the configuration shown, it can launch a pair of drones at a time, but there's also a hangar to accommodate larger, manned helicopters."
             }
         ]
       },
@@ -65,7 +79,29 @@
       "followers": "123K Followers",
       "channelType": "Popular",
       "isFollowing": true,
-      "news": []
+      "news": [
+          {
+          "title": "Mercedes-Benz brings back the camper van with its new Weekender",
+          "source": "CNN",
+          "time": "Feb 06, 2020",
+          "image": "Thumbnail_channel_Auto",
+          "news": "An SUV might look like a great way to escape the grind of city life, but it will be pretty uncomfortable to sleep in. That's why Mercedes-Benz has unveiled the Weekender, a classic style pop-up camper van that sleeps four. <br/><br/> The Weekender is based on Mercedes' mid-sized Metris van, which is about the length of a minivan. In the Weekender, the back seats can fold down to sleep two people, while two more can lie down in a tent-like area that extends out from the roof. The little rooftop bedroom is equipped with a foam mattress and USB ports to power lights and charge electronics. The van also has a separate battery to power lights and devices. <br/><br/> When raised into their seating position, the back seats can move back and forth on rails to create more passenger space or cargo room. Meanwhile, the front seats can rotate 180 degrees to face the back, creating a conversation space when the van is parked. br/><br/> Unlike some large RVs, the Weekender will not have a bathroom or shower. Many of those RVs are built from Mercedes Sprinter vans and include plumbing and other features that are added by companies such as Airstream. The Weekender, by contrast, is a simple camper van like the Volkswagen bus campers from the 1960s and '70s."
+          },
+          {
+          "title": "GM Super Bowl ad reveals powerful electric Hummer with 1,000 horsepower",
+          "source": "CNN",
+          "time": "Jan 31, 2020",
+          "image": "Thumbnail_channel_Auto",
+          "news": "In a sneak peek of its upcoming Super Bowl ad, General Motors also gives us a peek at its super powerful electric Hummer due out in 2022. <br/><br/> The most amazing thing about the new GMC Hummer EV will be how much power the truck will have. The Hummer's electric motors will produce up to 1,000 horsepower, enabling it to go from zero to 60 miles an hour in three seconds. The horsepower figure is more than most high-performance sports cars. General Motors' new Corvette, for instance, produces less than half that much horsepower. <br/><br/> The Hummer will also have a strikingly high 11,500 pound-feet of torque. Torque is a measure of raw pulling power. For comparison, a GMC Sierra 3500 Heavy Duty pickup with a diesel engine can produce 445 horsepower and 910 pound-feet of torque. That Sierra Heavy Duty truck, with a small fraction of the torque of the Hummer, can tow up to 14,500 pounds, according to GM (GM). <br/><br/> There are many factors involved in towing besides just torque, of course, and a General Motors spokesman said more details about the Hummer's capabilities will be revealed on May 20, when the electric truck is fully unveiled."
+          },
+          {
+          "title": "Ford's luxury Lincoln brand to make an electric vehicle with Rivian",
+          "source": "CNN",
+          "time": "Jan 29, 2020",
+          "image": "Thumbnail_channel_Auto",
+          "news": "Rivian, a Michigan-based startup backed heavily by Ford and Amazon, will develop a new electric vehicle for Ford's Lincoln luxury brand. <br/><br/> This will be Lincoln's first fully electric vehicle, although it has already unveiled two plug-in hybrid versions of its Aviator and Corsair SUVs. Plug-in hybrids have gasoline engines, but operate as fully electric vehicles for relatively short distances after being charged. <br/><br/>  The all-electric vehicle will be engineered on Rivian's so-called <b>skateboard</b> platform -- a basic structure with the batteries carried in a broad, flat floor. Different body types, such as a pickup or an SUV, can be designed to go on top of the platform. Rivian will produce the skateboard platforms for Lincoln at its factory in Normal, Illinois, a spokeswoman for Rivian said. Neither Ford nor Rivian would say whether final assembly of the Lincoln vehicles would take place at a Rivian or a Ford factory."
+          }
+      ]
     },
     {
       "channelName" : "TECHNOLOGY",
@@ -73,7 +109,29 @@
       "followers": "123K Followers",
       "channelType": "Explore",
       "isFollowing": true,
-      "news": []
+      "news": [
+          {
+      "title": "US charges Huawei with racketeering, escalating crackdown on tech giant",
+      "source": "CNN",
+      "time": "Feb 13, 2020",
+      "image": "Thumbnail_channel_Technology",
+      "news": "The US government has charged Chinese technology giant Huawei with racketeering and conspiracy to steal trade secrets, according to a superseding indictment unsealed Thursday in the US District Court for the Eastern District of New York. <br><br> A third charge alleges that Huawei engaged in wire fraud to steal intellectual property. The three new allegations supplement more than a dozen other charges already lodged against the company in a case originally unsealed last January. Huawei pleaded not guilty to the initial charges last March. <br><br> The Trump administration has been locked in a battle with Huawei for more than a year, as US officials have waged a campaign urging allies not to use Huawei's 5G equipment and enacted other measures aimed at stunting the company's growth."
+      },
+          {
+          "title": "Samsung and Apple's war for the best high-end smartphone is leading to ridiculous prices",
+          "source": "CNN",
+          "time": "Feb 13, 2020",
+          "image": "Thumbnail_channel_Technology",
+          "news": "Samsung kicked off its 'Galaxy Unpacked' event in San Francisco on Tuesday with a slick promo video introducing its new folding smartphone, the Galaxy Z Flip. Rebecca Hirst, Samsung's UK head of marketing, took the stage to tout the phone as being <b> like nothing you've ever experienced before.</b> <br><br> It all seemed to be going so well as she talked through the phone's specs and features. Then came the price reveal: $1,380. <br><br> <b>That's kind of a mixed response,</b> Hirst said to scattered applause. <br><br> It wasn't even the most expensive smartphone Samsung unveiled that day. The top-of-the-line version of its new flagship, the Samsung Galaxy S20 Ultra, starts at $1,399. If you get a 512 GB version, the price ticks up to $1,599.99. <br><br> The Samsung event highlights the new normal for the smartphone industry. In 2017, Apple shocked the world by charging $999 for the iPhone X. Many outlets questioned whether consumers would ever pay that much for a phone. Now, as Apple and Samsung compete for the high-end market, there are a growing number of smartphones that cost well over $1,000. <br><br> Two of Apple's newest smartphones, the iPhone 11 Pro and 11 Pro Max, start at $999 and $1099, respectively. The latter can cost as much as $1,449. And you can't get any of Samsung's newest phones for less than that once unthinkable price tag of $999."
+          },
+          {
+          "title": "Judge blocks Microsoft from starting Pentagon cloud contract, handing early win to Amazon",
+          "source": "The New York Times",
+          "time": "Feb 13, 2020",
+          "image": "Thumbnail_channel_Technology",
+          "news": "A federal judge has agreed to temporarily block Microsoft (MSFT) from beginning work on the Pentagon's multibillion-dollar cloud computing contract, in an early court victory for Amazon.<br><br> The contents of the decision, issued Thursday by Judge Patricia Campbell-Smith in the US Court of Federal Claims, remains under seal. But the order increases the pressure on the US government as it defends against a formal protest filed by Amazon Web Services over its handling of the contract process.<br><br> Earlier this week, Amazon (AMZN) asked the court for permission to gather testimony from President Donald Trump, Defense Secretary Mark Esper and former Defense Secretary James Mattis. A decision is expected on that request within weeks. <br><br> Amazon has alleged that President Trump exercised undue influence over the Defense Department as it weighed competing bids from Microsoft and Amazon for the cloud computing project, known as the Joint Enterprise Defense Infrastructure, or JEDI."
+          }
+      ]
     },
     {
       "channelName" : "ENTERTAINMENT",
@@ -81,7 +139,15 @@
       "followers": "123K Followers",
       "channelType": "Popular",
       "isFollowing": true,
-      "news": []
+      "news": [
+          {
+          "title": "'Fantasy Island' gets a horror reboot, but it's not a trip worth taking",
+          "source": "CNN",
+          "time": "Feb 14, 2020",
+          "image": "Thumbnail_channel_Entertainment",
+          "news": "A horror version of 'Fantasy Island,' frankly, sounds more interesting than a conventional reboot, which explains why Sony would hand the keys to Blumhouse, the reigning maestro of that genre, and let them run with it. That seed of potential, however, sails away on a tide of numbing stupidity. <br><br> A frantic woman races through the jungle as the movie begins, serving notice that this isn't grandma's 'Fantasy Island,' the escapist TV show that premiered in 1978. <br><br> That tease is followed by more familiar images, as a handful of contest winners land on an idyllic island (played by Fiji, incidentally), before being ushered in to meet their host, the mysterious Mr. Roarke (Michael Pena), who walks them through the rules. <br><br> Their fantasy, he explains, will be 'as real as you make it,' in a locale where 'anything and everything is possible.' But they must see each experience through to its conclusion, setting them on disparate adventures, which -- barring the odd moment of creepiness -- start promisingly enough, before becoming increasingly fantastic and eventually, deadly."
+          }
+      ]
     },
     {
       "channelName" : "ENIVORNMENT",

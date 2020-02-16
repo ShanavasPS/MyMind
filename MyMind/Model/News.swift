@@ -14,41 +14,41 @@ enum ChannelType {
     case none
 }
 
-struct News {
+struct News: Decodable {
    var title: String
    var source: String
    var time: String
    var news: String
+   var image: String
     
-    init(title: String, source: String, time: String, news: String) {
+    init(title: String, source: String, time: String, image: String, news: String) {
         self.title = title
         self.source = source
         self.time = time
+        self.image = image
         self.news = news
     }
 }
 
-class Channel {
+struct Channel: Decodable {
     let channelName : String;
     let channelImage: String;
     let followers: String;
-    var news: [News];
-    var currentNews: News;
-    var channelType: ChannelType;
+    var channelType: Int;
     var isFollowing: Bool;
-    init(name: String, image:String, followers: String, channelType: ChannelType, isFollowing: Bool) {
+    var news: [News];
+    init(name: String, image:String, followers: String, channelType: Int, isFollowing: Bool) {
         self.news = []
         self.channelName = name;
         self.channelImage = image;
         self.followers = followers;
-        self.currentNews = News(title: "", source: "", time: "", news: "");
         self.channelType = channelType;
         self.isFollowing = isFollowing;
     }
-    
-    public func add(title: String, source: String, time: String, news: String) {
-        self.news.append(News(title: title, source: source, time: time, news: news))
-    }
+}
+
+struct ResponseData: Decodable {
+    let channels: [Channel];
 }
 
 class Channels {
@@ -56,13 +56,12 @@ class Channels {
     public static let sharedInstance = Channels()
     var currentChannel: Channel;
     var selectedChannelType: ChannelType;
+    var currentNews: News;
+
     init() {
         self.items = [];
         self.selectedChannelType = .none;
-        self.currentChannel = Channel(name: "", image: "", followers: "", channelType: .none, isFollowing: false);
-    }
-    
-    public func add(name: String, image: String, followers: String, channelType: ChannelType, isFollowing: Bool) {
-        self.items.append(Channel(name: name, image: image, followers: followers, channelType: channelType, isFollowing: isFollowing))
+        self.currentChannel = Channel(name: "", image: "", followers: "", channelType: 0, isFollowing: false);
+        self.currentNews = News(title: "", source: "", time: "", image: "", news: "");
     }
 }

@@ -1,39 +1,35 @@
 {
-  "users": [
+  "channels": [
     {
-      "userId": 1,
-      "firstName": "Krish",
-      "lastName": "Lee",
-      "phoneNumber": "123456",
-      "emailAddress": "krish.lee@learningcontainer.com"
+      "channelName" : "AUTO",
+      "channelImage": "Thumbnail_channel_Auto",
+      "followers": "123K Followers",
+      "channelType": 0,
+      "isFollowing": true,
+      "news": [
+          {
+              "title": "Artic sea ice extend hits record low for winter maximum",
+              "source": "CNN",
+              "time": "Apr 3, 2015",
+              "image": "Thumbnail_channel_Auto",
+              "news": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there's huge variety of the state of the ice.<br/><br/> <b>So what does this new record for the lowest level of winter ice actually mean?</b><br/><br/>For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade."
+          },
+          {
+              "title": "Archeologists discovered lost city in Honduran jungle",
+              "source": "CNN",
+              "time": "Apr 3, 2015",
+              "image": "Thumbnail_channel_Auto",
+              "news": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there's huge variety of the state of the ice.<br/><br/> <b>So what does this new record for the lowest level of winter ice actually mean?</b><br/><br/>For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade."
+          }
+      ]
     },
     {
-      "userId": 2,
-      "firstName": "racks",
-      "lastName": "jacson",
-      "phoneNumber": "123456",
-      "emailAddress": "racks.jacson@learningcontainer.com"
-    },
-    {
-      "userId": 3,
-      "firstName": "denial",
-      "lastName": "roast",
-      "phoneNumber": "33333333",
-      "emailAddress": "denial.roast@learningcontainer.com"
-    },
-    {
-      "userId": 4,
-      "firstName": "devid",
-      "lastName": "neo",
-      "phoneNumber": "222222222",
-      "emailAddress": "devid.neo@learningcontainer.com"
-    },
-    {
-      "userId": 5,
-      "firstName": "jone",
-      "lastName": "mac",
-      "phoneNumber": "111111111",
-      "emailAddress": "jone.mac@learningcontainer.com"
+      "channelName" : "ENTERTAINMENT",
+      "channelImage": "Thumbnail_channel_Entertainment",
+      "followers": "123K Followers",
+      "channelType": 0,
+      "isFollowing": true,
+      "news": []
     }
   ]
 }

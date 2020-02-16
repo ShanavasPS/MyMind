@@ -18,6 +18,7 @@ class NewsViewController: UIViewController {
     @IBOutlet weak var newsTextView: UITextView!
     
     private let currentChannel = Channels.sharedInstance.currentChannel;
+    private let currentNews = Channels.sharedInstance.currentNews;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +28,11 @@ class NewsViewController: UIViewController {
     
     func updateView() {
         channelTitle.text = currentChannel.channelName + Constants.Channel.Postfix;
-        channelImage.image = UIImage(named: currentChannel.channelImage);
-        newsTitle.text = currentChannel.currentNews.title;
-        newsSource.text = currentChannel.currentNews.source;
-        newsTime.text = currentChannel.currentNews.time;
-        newsTextView.attributedText = currentChannel.currentNews.news.htmlToAttributedString;
+        channelImage.image = UIImage(named: currentNews.image);
+        newsTitle.text = currentNews.title;
+        newsSource.text = currentNews.source;
+        newsTime.text = currentNews.time;
+        newsTextView.attributedText = currentNews.news.htmlToAttributedString;
     }
     
     @IBAction func closeButtonClicked(_ sender: Any) {

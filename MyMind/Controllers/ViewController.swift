@@ -12,7 +12,7 @@ class ViewController: UICollectionViewController {
     
     private var headerView:HomeHeaderView = HomeHeaderView();
     private var webServiceManager = WebServiceManager.sharedInstance;
-    private var channels = Channels.sharedInstance;
+    private var channelInstance = Channels.sharedInstance;
     private var channelList:[Channel] = []
     
     override func viewDidLoad() {
@@ -82,7 +82,7 @@ extension ViewController {
   }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        channels.currentChannel = channelList[indexPath.row];
+        channelInstance.currentChannel = channelList[indexPath.row];
         performSegue(withIdentifier: Constants.Segues.SelectedChannel, sender: nil);
     }
     
@@ -125,7 +125,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 // MARK: - WebServiceManagerDelegate
 extension ViewController: WebServiceManagerDelegate {
     func fetchChannelsSuccess() {
-        channelList = channels.items;
+        channelList = channelInstance.items;
         updateChannelsBasedOnCategory();
     }
     
@@ -137,16 +137,16 @@ extension ViewController: WebServiceManagerDelegate {
 // MARK: - HomeHeaderViewDelegate
 extension ViewController: HomeHeaderViewDelegate {
     func updateChannelsBasedOnCategory() {
-        switch channels.selectedChannelType {
+        switch channelInstance.selectedChannelType {
         case .popular:
             //Get the channels that are of popular category
-            channelList = channels.items.filter {$0.channelType == .popular};
+            channelList = channelInstance.items.filter {$0.channelType == 0};
         case .explore:
             //Get the channels that are of explore category
-            channelList = channels.items.filter {$0.channelType == .explore};
+            channelList = channelInstance.items.filter {$0.channelType == 1};
         case .none:
             //Get the channels that are being followed
-            channelList = channels.items.filter {$0.isFollowing == true};
+            channelList = channelInstance.items.filter {$0.isFollowing == true};
         }
         self.collectionView.reloadData();
     }

@@ -12,6 +12,7 @@ import Foundation
 class ChannelDetailsViewController: UITableViewController {
     
     private let headerView = ChannelHeaderView();
+    private let channelInstance = Channels.sharedInstance;
     private let currentChannel = Channels.sharedInstance.currentChannel;
     
     override func viewDidLoad() {
@@ -69,7 +70,7 @@ extension ChannelDetailsViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        currentChannel.currentNews = currentChannel.news[indexPath.row];
+        channelInstance.currentNews = currentChannel.news[indexPath.row];
         performSegue(withIdentifier: Constants.Segues.SelectedNews, sender: nil);
     }
 

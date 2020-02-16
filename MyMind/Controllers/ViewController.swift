@@ -79,6 +79,11 @@ extension ViewController {
   
   override func collectionView(_ collectionView: UICollectionView,
                                numberOfItemsInSection section: Int) -> Int {
+    if(channelList.count == 0) {
+        self.updateLoadingMessage(message: "There are no channels available", visibility: true)
+    } else {
+        self.updateLoadingMessage(message: "", visibility: false)
+    }
     return channelList.count;
   }
   

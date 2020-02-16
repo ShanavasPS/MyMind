@@ -29,6 +29,7 @@
 		8E84A56A23F7F76800F39ABC /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56923F7F76800F39ABC /* WebServiceManager.swift */; };
 		8E84A56F23F92C7C00F39ABC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A56E23F92C7C00F39ABC /* Constants.swift */; };
 		8E84A57323F9446C00F39ABC /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E84A57223F9446B00F39ABC /* channels.json */; };
+		8E84A57523F97F8200F39ABC /* UITableView+EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84A57423F97F8100F39ABC /* UITableView+EmptyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		8E84A56923F7F76800F39ABC /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		8E84A56E23F92C7C00F39ABC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8E84A57223F9446B00F39ABC /* channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
+		8E84A57423F97F8100F39ABC /* UITableView+EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			children = (
 				8E84A55623F61BC600F39ABC /* UIView+LoadNib.swift */,
 				8E84A56723F74EBF00F39ABC /* String+Html.swift */,
+				8E84A57423F97F8100F39ABC /* UITableView+EmptyView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				8E0657C223F5577F0009847A /* ChannelCell.swift in Sources */,
 				8E84A56F23F92C7C00F39ABC /* Constants.swift in Sources */,
 				8E06579223F53B2B0009847A /* AppDelegate.swift in Sources */,
+				8E84A57523F97F8200F39ABC /* UITableView+EmptyView.swift in Sources */,
 				8E06579423F53B2B0009847A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

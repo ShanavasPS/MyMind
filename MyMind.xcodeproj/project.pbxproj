@@ -127,7 +127,6 @@
 		8E06579023F53B2B0009847A /* MyMind */ = {
 			isa = PBXGroup;
 			children = (
-				8E84A57223F9446B00F39ABC /* channels.json */,
 				8E84A56D23F92C5600F39ABC /* Constants */,
 				8E84A56C23F8882B00F39ABC /* Cells */,
 				8E84A56B23F882E200F39ABC /* Controllers */,
@@ -164,6 +163,7 @@
 		8E0657C923F5EA0F0009847A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E84A57223F9446B00F39ABC /* channels.json */,
 				8E0657CA23F5EAF50009847A /* News.swift */,
 				8E84A56923F7F76800F39ABC /* WebServiceManager.swift */,
 			);
